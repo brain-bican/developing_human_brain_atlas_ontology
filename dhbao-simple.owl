@@ -1,23 +1,20 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="https://purl.brain-bican.org/ontology/dhbao/dhbao-simple.owl#"
      xml:base="https://purl.brain-bican.org/ontology/dhbao/dhbao-simple.owl"
-     xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:doap="http://usefulinc.com/ns/doap#"
-     xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="https://purl.brain-bican.org/ontology/dhbao/dhbao-simple.owl">
-        <owl:versionIRI rdf:resource="https://purl.brain-bican.org/ontology/dhbao/releases/2023-08-24/dhbao-simple.owl"/>
+        <owl:versionIRI rdf:resource="https://purl.brain-bican.org/ontology/dhbao/releases/2025-02-10/dhbao-simple.owl"/>
         <terms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
         <terms:title>Developing Human Brain Atlas Ontology</terms:title>
-        <owl:versionInfo>2023-08-24</owl:versionInfo>
+        <owl:versionInfo>2025-02-10</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -33,98 +30,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0000122 -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000122">
-        <oboInOwl:hasDbXref>IAO:0000122</oboInOwl:hasDbXref>
-        <oboInOwl:id>example_of_usage</oboInOwl:id>
-        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
-        <oboInOwl:shorthand>example_of_usage</oboInOwl:shorthand>
-        <rdfs:label>example of usage</rdfs:label>
-    </owl:AnnotationProperty>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/IAO_0000589 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000589"/>
-    
-
-
-    <!-- http://purl.org/dc/elements/1.1/contributor -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor">
-        <oboInOwl:hasDbXref>http://purl.org/dc/elements/1.1/contributor</oboInOwl:hasDbXref>
-        <oboInOwl:id>dc-contributor</oboInOwl:id>
-        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
-        <oboInOwl:shorthand>dc-contributor</oboInOwl:shorthand>
-        <rdfs:label>contributor</rdfs:label>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://purl.org/dc/elements/1.1/creator -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator">
-        <oboInOwl:hasDbXref>http://purl.org/dc/elements/1.1/creator</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>dc-creator</oboInOwl:id>
-        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
-        <oboInOwl:shorthand>dc-creator</oboInOwl:shorthand>
-        <rdfs:label>creator</rdfs:label>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://purl.org/dc/elements/1.1/description -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description">
-        <oboInOwl:hasDbXref>http://purl.org/dc/elements/1.1/description</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>dc-description</oboInOwl:id>
-        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
-        <oboInOwl:shorthand>dc-description</oboInOwl:shorthand>
-        <rdfs:label>description</rdfs:label>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://purl.org/dc/elements/1.1/publisher -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/publisher">
-        <oboInOwl:hasDbXref>http://purl.org/dc/elements/1.1/publisher</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>dc-publisher</oboInOwl:id>
-        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
-        <oboInOwl:shorthand>dc-publisher</oboInOwl:shorthand>
-        <rdfs:label>publisher</rdfs:label>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://purl.org/dc/elements/1.1/source -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/source">
-        <oboInOwl:hasDbXref>http://purl.org/dc/elements/1.1/source</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>dc-source</oboInOwl:id>
-        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
-        <oboInOwl:shorthand>dc-source</oboInOwl:shorthand>
-        <rdfs:label>derived from resource</rdfs:label>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://purl.org/dc/elements/1.1/title -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title">
-        <oboInOwl:hasDbXref>http://purl.org/dc/elements/1.1/title</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>dc-title</oboInOwl:id>
-        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
-        <oboInOwl:shorthand>dc-title</oboInOwl:shorthand>
-        <rdfs:label>title</rdfs:label>
-    </owl:AnnotationProperty>
     
 
 
@@ -136,40 +44,10 @@
     
 
 
-    <!-- http://purl.org/dc/terms/isReferencedBy -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/isReferencedBy">
-        <oboInOwl:hasDbXref>http://purl.org/dc/terms/isReferencedBy</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>dcterms-isReferencedBy</oboInOwl:id>
-        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
-        <oboInOwl:shorthand>dcterms-isReferencedBy</oboInOwl:shorthand>
-        <rdfs:label>is referenced by</rdfs:label>
-    </owl:AnnotationProperty>
-    
-
-
     <!-- http://purl.org/dc/terms/license -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license">
-        <oboInOwl:hasDbXref>http://purl.org/dc/terms/license</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>dcterms-license</oboInOwl:id>
-        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
-        <oboInOwl:shorthand>dcterms-license</oboInOwl:shorthand>
         <rdfs:label>license</rdfs:label>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://purl.org/dc/terms/references -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/references">
-        <oboInOwl:hasDbXref>http://purl.org/dc/terms/references</oboInOwl:hasDbXref>
-        <oboInOwl:id>dcterms-references</oboInOwl:id>
-        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
-        <oboInOwl:shorthand>dcterms-references</oboInOwl:shorthand>
-        <rdfs:label>references</rdfs:label>
     </owl:AnnotationProperty>
     
 
@@ -178,58 +56,6 @@
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title">
         <rdfs:label>title</rdfs:label>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://usefulinc.com/ns/doap#GitRepository -->
-
-    <owl:AnnotationProperty rdf:about="http://usefulinc.com/ns/doap#GitRepository">
-        <oboInOwl:hasDbXref>http://usefulinc.com/ns/doap#GitRepository</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>doap-GitRepository</oboInOwl:id>
-        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
-        <oboInOwl:shorthand>doap-GitRepository</oboInOwl:shorthand>
-        <rdfs:label>Git repository</rdfs:label>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://usefulinc.com/ns/doap#SVNRepository -->
-
-    <owl:AnnotationProperty rdf:about="http://usefulinc.com/ns/doap#SVNRepository">
-        <oboInOwl:hasDbXref>http://usefulinc.com/ns/doap#SVNRepository</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>doap-SVNRepository</oboInOwl:id>
-        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
-        <oboInOwl:shorthand>doap-SVNRepository</oboInOwl:shorthand>
-        <rdfs:label>SVN repository</rdfs:label>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://usefulinc.com/ns/doap#bug-database -->
-
-    <owl:AnnotationProperty rdf:about="http://usefulinc.com/ns/doap#bug-database">
-        <oboInOwl:hasDbXref>http://usefulinc.com/ns/doap#bug-database</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>doap-bug-database</oboInOwl:id>
-        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
-        <oboInOwl:shorthand>doap-bug-database</oboInOwl:shorthand>
-        <rdfs:label>bug database</rdfs:label>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://usefulinc.com/ns/doap#wiki -->
-
-    <owl:AnnotationProperty rdf:about="http://usefulinc.com/ns/doap#wiki">
-        <oboInOwl:hasDbXref>http://usefulinc.com/ns/doap#wiki</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>doap-wiki</oboInOwl:id>
-        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
-        <oboInOwl:shorthand>doap-wiki</oboInOwl:shorthand>
-        <rdfs:label>wiki</rdfs:label>
     </owl:AnnotationProperty>
     
 
@@ -262,83 +88,9 @@
     
 
 
-    <!-- http://www.geneontology.org/formats/oboInOwl#hasOBONamespace -->
-
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
-    
-
-
-    <!-- http://www.geneontology.org/formats/oboInOwl#id -->
-
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#id"/>
-    
-
-
-    <!-- http://www.geneontology.org/formats/oboInOwl#is_metadata_tag -->
-
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#is_metadata_tag"/>
-    
-
-
-    <!-- http://www.geneontology.org/formats/oboInOwl#shorthand -->
-
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#shorthand">
-        <rdfs:label>shorthand</rdfs:label>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
-
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
-    
-
-
-    <!-- http://www.w3.org/2000/01/rdf-schema#seeAlso -->
-
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#seeAlso">
-        <oboInOwl:hasDbXref>http://www.w3.org/2000/01/rdf-schema#seeAlso</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>seeAlso</oboInOwl:id>
-        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
-        <oboInOwl:shorthand>seeAlso</oboInOwl:shorthand>
-        <rdfs:label>see also</rdfs:label>
-    </owl:AnnotationProperty>
-    
-
-
     <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel"/>
-    
-
-
-    <!-- http://xmlns.com/foaf/0.1/depicted_by -->
-
-    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/depicted_by">
-        <oboInOwl:hasDbXref>http://xmlns.com/foaf/0.1/depicted_by</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>depicted_by</oboInOwl:id>
-        <oboInOwl:id>foaf-depicted_by</oboInOwl:id>
-        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
-        <oboInOwl:shorthand>depicted_by</oboInOwl:shorthand>
-        <oboInOwl:shorthand>foaf-depicted_by</oboInOwl:shorthand>
-        <rdfs:label>depicted by</rdfs:label>
-        <rdfs:label>depicted_by</rdfs:label>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://xmlns.com/foaf/0.1/homepage -->
-
-    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/homepage">
-        <oboInOwl:hasDbXref>http://xmlns.com/foaf/0.1/homepage</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>foaf-homepage</oboInOwl:id>
-        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
-        <oboInOwl:shorthand>foaf-homepage</oboInOwl:shorthand>
-        <rdfs:label>homepage</rdfs:label>
-    </owl:AnnotationProperty>
     
 
 
@@ -355,66 +107,7 @@
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000050 -->
 
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000050">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-        <oboInOwl:hasDbXref>BFO:0000050</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>part_of</oboInOwl:id>
-        <oboInOwl:shorthand>part_of</oboInOwl:shorthand>
-        <rdfs:label>part of</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000066 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000066">
-        <oboInOwl:hasDbXref>BFO:0000066</oboInOwl:hasDbXref>
-        <oboInOwl:id>occurs_in</oboInOwl:id>
-        <oboInOwl:shorthand>occurs_in</oboInOwl:shorthand>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RO_0002160 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002160">
-        <oboInOwl:hasDbXref>RO:0002160</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>only_in_taxon</oboInOwl:id>
-        <oboInOwl:shorthand>only_in_taxon</oboInOwl:shorthand>
-        <rdfs:label>only in taxon</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RO_0002225 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002225">
-        <oboInOwl:hasDbXref>RO:0002225</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>develops_from</oboInOwl:id>
-        <oboInOwl:id>develops_from_part_of</oboInOwl:id>
-        <oboInOwl:shorthand>develops_from</oboInOwl:shorthand>
-        <oboInOwl:shorthand>develops_from_part_of</oboInOwl:shorthand>
-        <rdfs:label>develops from part of</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/aba#develops_from -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/aba#develops_from">
-        <oboInOwl:id>http://purl.obolibrary.org/obo/aba#develops_from</oboInOwl:id>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/aba#part_of -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/aba#part_of">
-        <oboInOwl:id>http://purl.obolibrary.org/obo/aba#part_of</oboInOwl:id>
-    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000050"/>
     
 
 
@@ -436,5 +129,5 @@
 
 
 
-<!-- Generated by the OWL API (version 4.5.25) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.29) https://github.com/owlcs/owlapi -->
 
