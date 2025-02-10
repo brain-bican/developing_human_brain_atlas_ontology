@@ -28,6 +28,7 @@ def tree_recurse(node, dl, namespace):
         label = "brain"
     d["name"] = label
     d["acronym"] = node["acronym"]
+    d["symbol"] = node["acronym"]
     if node["parent_structure_id"]:
         d["parent_structure_id"] = namespace + str(node["parent_structure_id"])
     # d["subclass_of"] = "UBERON:0002616"

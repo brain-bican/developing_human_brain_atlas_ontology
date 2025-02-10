@@ -3,6 +3,12 @@
     "id" : "https://purl.brain-bican.org/ontology/dhbao/dhbao-simple.json",
     "meta" : {
       "basicPropertyValues" : [ {
+        "pred" : "http://purl.obolibrary.org/obo/IAO_0000700",
+        "val" : "https://purl.brain-bican.org/ontology/dhbao/DHBA_10155"
+      }, {
+        "pred" : "http://purl.org/dc/terms/description",
+        "val" : "An application ontology built by combining ontologised versions of the Allen Institute Developing Human Brain Atlas (DHBA) StructureGraph mapped to Uberon."
+      }, {
         "pred" : "http://purl.org/dc/terms/license",
         "val" : "https://creativecommons.org/licenses/unspecified"
       }, {
@@ -22,7 +28,15 @@
       "type" : "PROPERTY",
       "propertyType" : "OBJECT"
     }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000028",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
       "id" : "http://purl.obolibrary.org/obo/IAO_0000589",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000700",
       "type" : "PROPERTY",
       "propertyType" : "ANNOTATION"
     }, {

@@ -7,6 +7,7 @@ Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
 Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
 Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 Prefix(dcterms:=<http://purl.org/dc/terms/>)
+Prefix(IAO:=<http://purl.obolibrary.org/obo/IAO_>)
 
 
 Ontology(<https://purl.brain-bican.org/ontology/dhbao.owl>
@@ -22,6 +23,9 @@ Import(<https://purl.brain-bican.org/ontology/dhbao/components/all_templates.owl
 Import(<https://purl.brain-bican.org/ontology/dhbao/patterns/definitions.owl>)
 Annotation(dcterms:license <https://creativecommons.org/licenses/unspecified>)
 Annotation(dcterms:title "Developing Human Brain Atlas Ontology")
+Annotation(dcterms:description "An application ontology built by combining ontologised versions of the Allen Institute Developing Human Brain Atlas (DHBA) StructureGraph mapped to Uberon.")
+# OLS root term
+Annotation(IAO:0000700 <https://purl.brain-bican.org/ontology/dhbao/DHBA_10155>)
 
 
 Declaration(Class(<https://purl.brain-bican.org/ontology/DHBAO_0000000>))
