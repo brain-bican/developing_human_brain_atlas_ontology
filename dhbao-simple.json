@@ -10,410 +10,58 @@
         "val" : "Developing Human Brain Atlas Ontology"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2023-08-24"
+        "val" : "2025-02-10"
       } ],
-      "version" : "https://purl.brain-bican.org/ontology/dhbao/releases/2023-08-24/dhbao-simple.json"
+      "version" : "https://purl.brain-bican.org/ontology/dhbao/releases/2025-02-10/dhbao-simple.json"
     },
     "nodes" : [ {
+      "id" : "https://purl.brain-bican.org/ontology/DHBAO_0000000",
+      "type" : "CLASS"
+    }, {
       "id" : "http://purl.obolibrary.org/obo/BFO_0000050",
-      "lbl" : "part of",
       "type" : "PROPERTY",
-      "meta" : {
-        "xrefs" : [ {
-          "val" : "BFO:0000050"
-        } ],
-        "basicPropertyValues" : [ {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
-          "val" : "uberon"
-        }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#shorthand",
-          "val" : "part_of"
-        } ]
-      }
+      "propertyType" : "OBJECT"
     }, {
-      "id" : "http://purl.obolibrary.org/obo/BFO_0000066",
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000589",
       "type" : "PROPERTY",
-      "meta" : {
-        "xrefs" : [ {
-          "val" : "BFO:0000066"
-        } ],
-        "basicPropertyValues" : [ {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#shorthand",
-          "val" : "occurs_in"
-        } ]
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/IAO_0000122",
-      "lbl" : "example of usage",
-      "type" : "PROPERTY",
-      "meta" : {
-        "xrefs" : [ {
-          "val" : "IAO:0000122"
-        } ],
-        "basicPropertyValues" : [ {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#is_metadata_tag",
-          "val" : "true"
-        }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#shorthand",
-          "val" : "example_of_usage"
-        } ]
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/RO_0002160",
-      "lbl" : "only in taxon",
-      "type" : "PROPERTY",
-      "meta" : {
-        "xrefs" : [ {
-          "val" : "RO:0002160"
-        } ],
-        "basicPropertyValues" : [ {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
-          "val" : "uberon"
-        }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#shorthand",
-          "val" : "only_in_taxon"
-        } ]
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/RO_0002225",
-      "lbl" : "develops from part of",
-      "type" : "PROPERTY",
-      "meta" : {
-        "xrefs" : [ {
-          "val" : "RO:0002225"
-        } ],
-        "basicPropertyValues" : [ {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
-          "val" : "uberon"
-        }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#shorthand",
-          "val" : "develops_from"
-        }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#shorthand",
-          "val" : "develops_from_part_of"
-        } ]
-      }
-    }, {
-      "id" : "http://purl.org/dc/elements/1.1/contributor",
-      "lbl" : "contributor",
-      "type" : "PROPERTY",
-      "meta" : {
-        "xrefs" : [ {
-          "val" : "http://purl.org/dc/elements/1.1/contributor"
-        } ],
-        "basicPropertyValues" : [ {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#is_metadata_tag",
-          "val" : "true"
-        }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#shorthand",
-          "val" : "dc-contributor"
-        } ]
-      }
-    }, {
-      "id" : "http://purl.org/dc/elements/1.1/creator",
-      "lbl" : "creator",
-      "type" : "PROPERTY",
-      "meta" : {
-        "xrefs" : [ {
-          "val" : "http://purl.org/dc/elements/1.1/creator"
-        } ],
-        "basicPropertyValues" : [ {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
-          "val" : "uberon"
-        }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#is_metadata_tag",
-          "val" : "true"
-        }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#shorthand",
-          "val" : "dc-creator"
-        } ]
-      }
-    }, {
-      "id" : "http://purl.org/dc/elements/1.1/description",
-      "lbl" : "description",
-      "type" : "PROPERTY",
-      "meta" : {
-        "xrefs" : [ {
-          "val" : "http://purl.org/dc/elements/1.1/description"
-        } ],
-        "basicPropertyValues" : [ {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
-          "val" : "uberon"
-        }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#is_metadata_tag",
-          "val" : "true"
-        }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#shorthand",
-          "val" : "dc-description"
-        } ]
-      }
-    }, {
-      "id" : "http://purl.org/dc/elements/1.1/publisher",
-      "lbl" : "publisher",
-      "type" : "PROPERTY",
-      "meta" : {
-        "xrefs" : [ {
-          "val" : "http://purl.org/dc/elements/1.1/publisher"
-        } ],
-        "basicPropertyValues" : [ {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
-          "val" : "uberon"
-        }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#is_metadata_tag",
-          "val" : "true"
-        }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#shorthand",
-          "val" : "dc-publisher"
-        } ]
-      }
-    }, {
-      "id" : "http://purl.org/dc/elements/1.1/source",
-      "lbl" : "derived from resource",
-      "type" : "PROPERTY",
-      "meta" : {
-        "xrefs" : [ {
-          "val" : "http://purl.org/dc/elements/1.1/source"
-        } ],
-        "basicPropertyValues" : [ {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
-          "val" : "uberon"
-        }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#is_metadata_tag",
-          "val" : "true"
-        }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#shorthand",
-          "val" : "dc-source"
-        } ]
-      }
-    }, {
-      "id" : "http://purl.org/dc/elements/1.1/title",
-      "lbl" : "title",
-      "type" : "PROPERTY",
-      "meta" : {
-        "xrefs" : [ {
-          "val" : "http://purl.org/dc/elements/1.1/title"
-        } ],
-        "basicPropertyValues" : [ {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
-          "val" : "uberon"
-        }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#is_metadata_tag",
-          "val" : "true"
-        }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#shorthand",
-          "val" : "dc-title"
-        } ]
-      }
+      "propertyType" : "ANNOTATION"
     }, {
       "id" : "http://purl.org/dc/terms/description",
       "lbl" : "description",
-      "type" : "PROPERTY"
-    }, {
-      "id" : "http://purl.org/dc/terms/isReferencedBy",
-      "lbl" : "is referenced by",
       "type" : "PROPERTY",
-      "meta" : {
-        "xrefs" : [ {
-          "val" : "http://purl.org/dc/terms/isReferencedBy"
-        } ],
-        "basicPropertyValues" : [ {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
-          "val" : "uberon"
-        }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#is_metadata_tag",
-          "val" : "true"
-        }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#shorthand",
-          "val" : "dcterms-isReferencedBy"
-        } ]
-      }
+      "propertyType" : "ANNOTATION"
     }, {
       "id" : "http://purl.org/dc/terms/license",
       "lbl" : "license",
       "type" : "PROPERTY",
-      "meta" : {
-        "xrefs" : [ {
-          "val" : "http://purl.org/dc/terms/license"
-        } ],
-        "basicPropertyValues" : [ {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
-          "val" : "uberon"
-        }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#is_metadata_tag",
-          "val" : "true"
-        }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#shorthand",
-          "val" : "dcterms-license"
-        } ]
-      }
-    }, {
-      "id" : "http://purl.org/dc/terms/references",
-      "lbl" : "references",
-      "type" : "PROPERTY",
-      "meta" : {
-        "xrefs" : [ {
-          "val" : "http://purl.org/dc/terms/references"
-        } ],
-        "basicPropertyValues" : [ {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#is_metadata_tag",
-          "val" : "true"
-        }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#shorthand",
-          "val" : "dcterms-references"
-        } ]
-      }
+      "propertyType" : "ANNOTATION"
     }, {
       "id" : "http://purl.org/dc/terms/title",
       "lbl" : "title",
-      "type" : "PROPERTY"
-    }, {
-      "id" : "http://usefulinc.com/ns/doap#GitRepository",
-      "lbl" : "Git repository",
       "type" : "PROPERTY",
-      "meta" : {
-        "xrefs" : [ {
-          "val" : "http://usefulinc.com/ns/doap#GitRepository"
-        } ],
-        "basicPropertyValues" : [ {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
-          "val" : "uberon"
-        }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#is_metadata_tag",
-          "val" : "true"
-        }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#shorthand",
-          "val" : "doap-GitRepository"
-        } ]
-      }
+      "propertyType" : "ANNOTATION"
     }, {
-      "id" : "http://usefulinc.com/ns/doap#SVNRepository",
-      "lbl" : "SVN repository",
+      "id" : "http://www.geneontology.org/formats/oboInOwl#SubsetProperty",
       "type" : "PROPERTY",
-      "meta" : {
-        "xrefs" : [ {
-          "val" : "http://usefulinc.com/ns/doap#SVNRepository"
-        } ],
-        "basicPropertyValues" : [ {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
-          "val" : "uberon"
-        }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#is_metadata_tag",
-          "val" : "true"
-        }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#shorthand",
-          "val" : "doap-SVNRepository"
-        } ]
-      }
+      "propertyType" : "ANNOTATION"
     }, {
-      "id" : "http://usefulinc.com/ns/doap#bug-database",
-      "lbl" : "bug database",
+      "id" : "http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty",
       "type" : "PROPERTY",
-      "meta" : {
-        "xrefs" : [ {
-          "val" : "http://usefulinc.com/ns/doap#bug-database"
-        } ],
-        "basicPropertyValues" : [ {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
-          "val" : "uberon"
-        }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#is_metadata_tag",
-          "val" : "true"
-        }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#shorthand",
-          "val" : "doap-bug-database"
-        } ]
-      }
-    }, {
-      "id" : "http://usefulinc.com/ns/doap#wiki",
-      "lbl" : "wiki",
-      "type" : "PROPERTY",
-      "meta" : {
-        "xrefs" : [ {
-          "val" : "http://usefulinc.com/ns/doap#wiki"
-        } ],
-        "basicPropertyValues" : [ {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
-          "val" : "uberon"
-        }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#is_metadata_tag",
-          "val" : "true"
-        }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#shorthand",
-          "val" : "doap-wiki"
-        } ]
-      }
+      "propertyType" : "ANNOTATION"
     }, {
       "id" : "http://www.geneontology.org/formats/oboInOwl#hasDbXref",
       "lbl" : "database_cross_reference",
-      "type" : "PROPERTY"
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
     }, {
       "id" : "http://www.geneontology.org/formats/oboInOwl#hasExactSynonym",
       "lbl" : "has_exact_synonym",
-      "type" : "PROPERTY"
-    }, {
-      "id" : "http://www.geneontology.org/formats/oboInOwl#shorthand",
-      "lbl" : "shorthand",
-      "type" : "PROPERTY"
-    }, {
-      "id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
-      "lbl" : "see also",
       "type" : "PROPERTY",
-      "meta" : {
-        "xrefs" : [ {
-          "val" : "http://www.w3.org/2000/01/rdf-schema#seeAlso"
-        } ],
-        "basicPropertyValues" : [ {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
-          "val" : "uberon"
-        }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#is_metadata_tag",
-          "val" : "true"
-        }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#shorthand",
-          "val" : "seeAlso"
-        } ]
-      }
+      "propertyType" : "ANNOTATION"
     }, {
-      "id" : "http://xmlns.com/foaf/0.1/depicted_by",
-      "lbl" : "depicted_by",
+      "id" : "http://www.w3.org/2004/02/skos/core#prefLabel",
       "type" : "PROPERTY",
-      "meta" : {
-        "xrefs" : [ {
-          "val" : "http://xmlns.com/foaf/0.1/depicted_by"
-        } ],
-        "basicPropertyValues" : [ {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
-          "val" : "uberon"
-        }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#is_metadata_tag",
-          "val" : "true"
-        }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#shorthand",
-          "val" : "depicted_by"
-        }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#shorthand",
-          "val" : "foaf-depicted_by"
-        } ]
-      }
-    }, {
-      "id" : "http://xmlns.com/foaf/0.1/homepage",
-      "lbl" : "homepage",
-      "type" : "PROPERTY",
-      "meta" : {
-        "xrefs" : [ {
-          "val" : "http://xmlns.com/foaf/0.1/homepage"
-        } ],
-        "basicPropertyValues" : [ {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
-          "val" : "uberon"
-        }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#is_metadata_tag",
-          "val" : "true"
-        }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#shorthand",
-          "val" : "foaf-homepage"
-        } ]
-      }
+      "propertyType" : "ANNOTATION"
     } ]
   } ]
 }

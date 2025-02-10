@@ -15,7 +15,8 @@
 URIBASE = https://purl.brain-bican.org/ontology
 
 JOBS = 16 # 1 17 10 8
-BRIDGES = aba dhba
+#BRIDGES = aba dhba
+BRIDGES = dhba
 TARGETS = dhba
 
 LINKML = linkml-data2owl
@@ -58,34 +59,34 @@ sources/%.ofn: ../linkml/data/template_%.tsv
 .PRECIOUS: sources/%.ofn
 
 # download bridges
-sources/uberon-bridge-to-aba.owl:
-	curl -o sources/uberon-bridge-to-aba.obo "https://raw.githubusercontent.com/obophenotype/uberon/master/src/ontology/bridge/uberon-bridge-to-aba.obo"
-	$(ROBOT) convert -i sources/uberon-bridge-to-aba.obo --format owl -o $@
-	sed -i 's|http://purl.obolibrary.org/obo/ABA_|https://purl.brain-bican.org/ontology/abao/ABA_|g' $@
+#sources/uberon-bridge-to-aba.owl:
+#	curl -o sources/uberon-bridge-to-aba.obo "https://raw.githubusercontent.com/obophenotype/uberon/master/src/ontology/bridge/uberon-bridge-to-aba.obo"
+#	$(ROBOT) convert -i sources/uberon-bridge-to-aba.obo --format owl -o $@
+#	sed -i 's|http://purl.obolibrary.org/obo/ABA_|https://purl.brain-bican.org/ontology/abao/ABA_|g' $@
 
 sources/uberon-bridge-to-dhba.owl:
-	curl -o sources/uberon-bridge-to-dhba.obo "https://raw.githubusercontent.com/obophenotype/uberon/master/src/ontology/bridge/uberon-bridge-to-dhba.obo"
-	$(ROBOT) convert -i sources/uberon-bridge-to-dhba.obo --format owl -o $@
+	curl -o sources/uberon-bridge-to-dhba.owl "https://raw.githubusercontent.com/obophenotype/uberon/master/src/ontology/bridge/uberon-bridge-to-dhba.owl"
+	$(ROBOT) convert -i sources/uberon-bridge-to-dhba.owl --format owl -o $@
 	sed -i 's|http://purl.obolibrary.org/obo/DHBA_|https://purl.brain-bican.org/ontology/dhbao/DHBA_|g' $@
 
 sources/uberon-bridge-to-dmba.owl:
-	curl -o sources/uberon-bridge-to-dmba.obo "https://raw.githubusercontent.com/obophenotype/uberon/master/src/ontology/bridge/uberon-bridge-to-dmba.obo"
-	$(ROBOT) convert -i sources/uberon-bridge-to-dmba.obo --format owl -o $@
+	curl -o sources/uberon-bridge-to-dmba.owl "https://raw.githubusercontent.com/obophenotype/uberon/master/src/ontology/bridge/uberon-bridge-to-dmba.owl"
+	$(ROBOT) convert -i sources/uberon-bridge-to-dmba.owl --format owl -o $@
 	sed -i 's|http://purl.obolibrary.org/obo/DMBA_|https://purl.brain-bican.org/ontology/dmbao/DMBA_|g' $@
 
 sources/uberon-bridge-to-hba.owl:
-	curl -o sources/uberon-bridge-to-hba.obo "https://raw.githubusercontent.com/obophenotype/uberon/master/src/ontology/bridge/uberon-bridge-to-hba.obo"
-	$(ROBOT) convert -i sources/uberon-bridge-to-hba.obo --format owl -o $@
+	curl -o sources/uberon-bridge-to-hba.owl "https://raw.githubusercontent.com/obophenotype/uberon/master/src/ontology/bridge/uberon-bridge-to-hba.owl"
+	$(ROBOT) convert -i sources/uberon-bridge-to-hba.owl --format owl -o $@
 	sed -i 's|http://purl.obolibrary.org/obo/HBA_|https://purl.brain-bican.org/ontology/hbao/HBA_|g' $@
 
 sources/uberon-bridge-to-mba.owl:
-	curl -o sources/uberon-bridge-to-mba.obo "https://raw.githubusercontent.com/obophenotype/uberon/master/src/ontology/bridge/uberon-bridge-to-mba.obo"
-	$(ROBOT) convert -i sources/uberon-bridge-to-mba.obo --format owl -o $@
+	curl -o sources/uberon-bridge-to-mba.owl "https://raw.githubusercontent.com/obophenotype/uberon/master/src/ontology/bridge/uberon-bridge-to-mba.owl"
+	$(ROBOT) convert -i sources/uberon-bridge-to-mba.owl --format owl -o $@
 	sed -i 's|http://purl.obolibrary.org/obo/MBA_|https://purl.brain-bican.org/ontology/mbao/MBA_|g' $@
 
 sources/uberon-bridge-to-pba.owl:
-	curl -o sources/uberon-bridge-to-pba.obo "https://raw.githubusercontent.com/obophenotype/uberon/master/src/ontology/bridge/uberon-bridge-to-pba.obo"
-	$(ROBOT) convert -i sources/uberon-bridge-to-pba.obo --format owl -o $@
+	curl -o sources/uberon-bridge-to-pba.owl "https://raw.githubusercontent.com/obophenotype/uberon/master/src/ontology/bridge/uberon-bridge-to-pba.owl"
+	$(ROBOT) convert -i sources/uberon-bridge-to-pba.owl --format owl -o $@
 	sed -i 's|http://purl.obolibrary.org/obo/PBA_|https://purl.brain-bican.org/ontology/pbao/PBA_|g' $@
 
 # TODO handle legacy mapings
@@ -164,3 +165,12 @@ $(ONT)-simple.owl: $(EDIT_PREPROCESSED) $(OTHER_SRC) $(SIMPLESEED) $(IMPORT_FILE
 		reduce -r ELK \
 		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru \
 		$(SHARED_ROBOT_COMMANDS) annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@
+
+#	Overwrite the default rule to use ONTBASE instead of URIBASE
+$(ONT).owl: $(ONT)-full.owl
+	$(ROBOT) annotate --input $< --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
+		convert -o $@.tmp.owl && mv $@.tmp.owl $@
+$(ONT).json: $(ONT).owl
+	$(ROBOT) annotate --input $< --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
+		convert --check false -f json -o $@.tmp.json &&\
+		mv $@.tmp.json $@
