@@ -16,66 +16,30 @@
         "val" : "Developing Human Brain Atlas Ontology"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2025-02-10"
+        "val" : "2025-11-10"
       } ],
-      "version" : "https://purl.brain-bican.org/ontology/dhbao/releases/2025-02-10/dhbao-simple.json"
+      "version" : "https://purl.brain-bican.org/ontology/dhbao/releases/2025-11-10/dhbao-simple.json"
     },
     "nodes" : [ {
-      "id" : "https://purl.brain-bican.org/ontology/DHBAO_0000000",
-      "type" : "CLASS"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/BFO_0000050",
-      "type" : "PROPERTY",
-      "propertyType" : "OBJECT"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/IAO_0000028",
-      "type" : "PROPERTY",
-      "propertyType" : "ANNOTATION"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/IAO_0000589",
-      "type" : "PROPERTY",
-      "propertyType" : "ANNOTATION"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/IAO_0000700",
-      "type" : "PROPERTY",
-      "propertyType" : "ANNOTATION"
-    }, {
       "id" : "http://purl.org/dc/terms/description",
       "lbl" : "description",
-      "type" : "PROPERTY",
-      "propertyType" : "ANNOTATION"
+      "type" : "PROPERTY"
     }, {
       "id" : "http://purl.org/dc/terms/license",
       "lbl" : "license",
-      "type" : "PROPERTY",
-      "propertyType" : "ANNOTATION"
+      "type" : "PROPERTY"
     }, {
       "id" : "http://purl.org/dc/terms/title",
       "lbl" : "title",
-      "type" : "PROPERTY",
-      "propertyType" : "ANNOTATION"
-    }, {
-      "id" : "http://www.geneontology.org/formats/oboInOwl#SubsetProperty",
-      "type" : "PROPERTY",
-      "propertyType" : "ANNOTATION"
-    }, {
-      "id" : "http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty",
-      "type" : "PROPERTY",
-      "propertyType" : "ANNOTATION"
+      "type" : "PROPERTY"
     }, {
       "id" : "http://www.geneontology.org/formats/oboInOwl#hasDbXref",
       "lbl" : "database_cross_reference",
-      "type" : "PROPERTY",
-      "propertyType" : "ANNOTATION"
+      "type" : "PROPERTY"
     }, {
       "id" : "http://www.geneontology.org/formats/oboInOwl#hasExactSynonym",
       "lbl" : "has_exact_synonym",
-      "type" : "PROPERTY",
-      "propertyType" : "ANNOTATION"
-    }, {
-      "id" : "http://www.w3.org/2004/02/skos/core#prefLabel",
-      "type" : "PROPERTY",
-      "propertyType" : "ANNOTATION"
+      "type" : "PROPERTY"
     } ]
   } ]
 }

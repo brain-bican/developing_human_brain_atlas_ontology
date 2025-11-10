@@ -64,8 +64,9 @@ sources/%.ofn: ../linkml/data/template_%.tsv
 #	$(ROBOT) convert -i sources/uberon-bridge-to-aba.obo --format owl -o $@
 #	sed -i 's|http://purl.obolibrary.org/obo/ABA_|https://purl.brain-bican.org/ontology/abao/ABA_|g' $@
 
+# TODO: until the dhba bridge is merged into uberon main, we need to point to the dhba_bridge_refresh branch
 sources/uberon-bridge-to-dhba.owl:
-	curl -o sources/uberon-bridge-to-dhba.owl "https://raw.githubusercontent.com/obophenotype/uberon/master/src/ontology/bridge/uberon-bridge-to-dhba.owl"
+	curl -o sources/uberon-bridge-to-dhba.owl "https://raw.githubusercontent.com/obophenotype/uberon/dhba_bridge_refresh/src/ontology/bridge/uberon-bridge-to-dhba.owl"
 	$(ROBOT) convert -i sources/uberon-bridge-to-dhba.owl --format owl -o $@
 	sed -i 's|http://purl.obolibrary.org/obo/DHBA_|https://purl.brain-bican.org/ontology/dhbao/DHBA_|g' $@
 
