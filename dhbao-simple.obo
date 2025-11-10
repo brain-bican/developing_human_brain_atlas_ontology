@@ -1,12 +1,9 @@
 format-version: 1.2
-data-version: https://purl.brain-bican.org/ontology/dhbao/releases/2025-02-10/dhbao-simple.owl
-idspace: oboInOwl http://www.geneontology.org/formats/oboInOwl# 
-idspace: skos http://www.w3.org/2004/02/skos/core# 
-idspace: terms http://purl.org/dc/terms/ 
+data-version: https://purl.brain-bican.org/ontology/dhbao/releases/2025-11-10/dhbao-simple.owl
 ontology: https://purl.brain-bican.org/ontology/dhbao/dhbao-simple.owl
+property_value: http://purl.org/dc/terms/description "An application ontology built by combining ontologised versions of the Allen Institute Developing Human Brain Atlas (DHBA) StructureGraph mapped to Uberon." xsd:string
+property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/unspecified
+property_value: http://purl.org/dc/terms/title "Developing Human Brain Atlas Ontology" xsd:string
 property_value: IAO:0000700 DHBA:10155
-property_value: owl:versionInfo "2025-02-10" xsd:string
-property_value: terms:description "An application ontology built by combining ontologised versions of the Allen Institute Developing Human Brain Atlas (DHBA) StructureGraph mapped to Uberon." xsd:string
-property_value: terms:license https://creativecommons.org/licenses/unspecified
-property_value: terms:title "Developing Human Brain Atlas Ontology" xsd:string
+property_value: owl:versionInfo "2025-11-10" xsd:string
 
