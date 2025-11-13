@@ -11,12 +11,12 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="https://purl.brain-bican.org/ontology/dhbao/dhbao-simple.owl">
-        <owl:versionIRI rdf:resource="https://purl.brain-bican.org/ontology/dhbao/releases/2025-11-10/dhbao-simple.owl"/>
+        <owl:versionIRI rdf:resource="https://purl.brain-bican.org/ontology/dhbao/releases/2025-11-13/dhbao-simple.owl"/>
         <obo:IAO_0000700 rdf:resource="https://purl.brain-bican.org/ontology/dhbao/DHBA_10155"/>
         <terms:description>An application ontology built by combining ontologised versions of the Allen Institute Developing Human Brain Atlas (DHBA) StructureGraph mapped to Uberon.</terms:description>
         <terms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
         <terms:title>Developing Human Brain Atlas Ontology</terms:title>
-        <owl:versionInfo>2025-11-10</owl:versionInfo>
+        <owl:versionInfo>2025-11-13</owl:versionInfo>
     </owl:Ontology>
     
 

@@ -1,12 +1,12 @@
 format-version: 1.2
-data-version: https://purl.brain-bican.org/ontology/dhbao/releases/2025-11-10/dhbao-base.owl
+data-version: https://purl.brain-bican.org/ontology/dhbao/releases/2025-11-13/dhbao-base.owl
 ontology: https://purl.brain-bican.org/ontology/dhbao/dhbao-base.owl
 property_value: http://purl.org/dc/elements/1.1/type IAO:8000001
 property_value: http://purl.org/dc/terms/description "An application ontology built by combining ontologised versions of the Allen Institute Developing Human Brain Atlas (DHBA) StructureGraph mapped to Uberon." xsd:string
 property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/unspecified
 property_value: http://purl.org/dc/terms/title "Developing Human Brain Atlas Ontology" xsd:string
 property_value: IAO:0000700 DHBA:10155
-property_value: owl:versionInfo "2025-11-10" xsd:string
+property_value: owl:versionInfo "2025-11-13" xsd:string
 
 [Term]
 id: DHBA:10153
@@ -1995,14 +1995,8 @@ xref: http://atlas.brain-map.org/atlas?atlas=138322603#structure=10301
 xref: http://atlas.brain-map.org/atlas?atlas=138322605#structure=10301
 xref: http://atlas.brain-map.org/atlas?atlas=265297126#structure=10301
 xref: http://atlas.brain-map.org/atlas?atlas=3#structure=10301
-is_a: UBERON:0002191
-intersection_of: UBERON:0002191
-intersection_of: RO:0002162 NCBITaxon:9606
 relationship: BFO:0000050 DHBA:10294 ! hippocampus (hippocampal formation)
-relationship: BFO:0000050 NCBITaxon:9606
-relationship: RO:0002162 NCBITaxon:9606
 property_value: IAO:0000028 "Sub" xsd:string
-property_value: IAO:0000589 "subiculum (human)" xsd:string
 property_value: prefLabel "subicular cortex  ( human dev )" xsd:string
 
 [Term]
@@ -7785,14 +7779,8 @@ xref: http://atlas.brain-map.org/atlas?atlas=138322603#structure=10669
 xref: http://atlas.brain-map.org/atlas?atlas=138322605#structure=10669
 xref: http://atlas.brain-map.org/atlas?atlas=265297126#structure=10669
 xref: http://atlas.brain-map.org/atlas?atlas=3#structure=10669
-is_a: UBERON:0002422
-intersection_of: UBERON:0002422
-intersection_of: RO:0002162 NCBITaxon:9606
 relationship: BFO:0000050 DHBA:10653 ! hindbrain (rhombencephalon)
-relationship: BFO:0000050 NCBITaxon:9606
-relationship: RO:0002162 NCBITaxon:9606
 property_value: IAO:0000028 "HV" xsd:string
-property_value: IAO:0000589 "fourth ventricle (human)" xsd:string
 property_value: prefLabel "ventricles of hindbrain  ( human dev )" xsd:string
 
 [Term]
@@ -22959,14 +22947,8 @@ xref: http://atlas.brain-map.org/atlas?atlas=138322603#structure=12074
 xref: http://atlas.brain-map.org/atlas?atlas=138322605#structure=12074
 xref: http://atlas.brain-map.org/atlas?atlas=265297126#structure=12074
 xref: http://atlas.brain-map.org/atlas?atlas=3#structure=12074
-is_a: UBERON:0002265
-intersection_of: UBERON:0002265
-intersection_of: RO:0002162 NCBITaxon:9606
 relationship: BFO:0000050 DHBA:10568 ! forebrain ipsilateral fiber tracts
-relationship: BFO:0000050 NCBITaxon:9606
-relationship: RO:0002162 NCBITaxon:9606
 property_value: IAO:0000028 "ost" xsd:string
-property_value: IAO:0000589 "olfactory tract (human)" xsd:string
 property_value: prefLabel "olfactory striae  ( human dev )" xsd:string
 
 [Term]
@@ -27705,14 +27687,8 @@ xref: http://atlas.brain-map.org/atlas?atlas=138322603#structure=12399
 xref: http://atlas.brain-map.org/atlas?atlas=138322605#structure=12399
 xref: http://atlas.brain-map.org/atlas?atlas=265297126#structure=12399
 xref: http://atlas.brain-map.org/atlas?atlas=3#structure=12399
-is_a: UBERON:0004073
-intersection_of: UBERON:0004073
-intersection_of: RO:0002162 NCBITaxon:9606
 relationship: BFO:0000050 DHBA:10660 ! cerebellar deep nuclei
-relationship: BFO:0000050 NCBITaxon:9606
-relationship: RO:0002162 NCBITaxon:9606
 property_value: IAO:0000028 "InP" xsd:string
-property_value: IAO:0000589 "cerebellum interpositus nucleus (human)" xsd:string
 property_value: prefLabel "interpositus (intermediate) nucleus  ( human dev )" xsd:string
 
 [Term]
@@ -28749,14 +28725,8 @@ xref: http://atlas.brain-map.org/atlas?atlas=138322603#structure=12471
 xref: http://atlas.brain-map.org/atlas?atlas=138322605#structure=12471
 xref: http://atlas.brain-map.org/atlas?atlas=265297126#structure=12471
 xref: http://atlas.brain-map.org/atlas?atlas=3#structure=12471
-is_a: UBERON:0002047
-intersection_of: UBERON:0002047
-intersection_of: RO:0002162 NCBITaxon:9606
 relationship: BFO:0000050 DHBA:12416 ! pontine tegmentum
-relationship: BFO:0000050 NCBITaxon:9606
-relationship: RO:0002162 NCBITaxon:9606
 property_value: IAO:0000028 "PnRa" xsd:string
-property_value: IAO:0000589 "pontine raphe nucleus (human)" xsd:string
 property_value: prefLabel "raphe pontis nucleus  ( human dev )" xsd:string
 
 [Term]
