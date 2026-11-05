@@ -1,12 +1,12 @@
 format-version: 1.2
-data-version: https://purl.brain-bican.org/ontology/dhbao/releases/2025-11-13/dhbao-base.owl
+data-version: https://purl.brain-bican.org/ontology/dhbao/releases/2026-11-05/dhbao-base.owl
 ontology: https://purl.brain-bican.org/ontology/dhbao/dhbao-base.owl
 property_value: http://purl.org/dc/elements/1.1/type IAO:8000001
 property_value: http://purl.org/dc/terms/description "An application ontology built by combining ontologised versions of the Allen Institute Developing Human Brain Atlas (DHBA) StructureGraph mapped to Uberon." xsd:string
 property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/unspecified
 property_value: http://purl.org/dc/terms/title "Developing Human Brain Atlas Ontology" xsd:string
 property_value: IAO:0000700 DHBA:10155
-property_value: owl:versionInfo "2025-11-13" xsd:string
+property_value: owl:versionInfo "2026-11-05" xsd:string
 
 [Term]
 id: DHBA:10153
@@ -1785,14 +1785,8 @@ xref: http://atlas.brain-map.org/atlas?atlas=138322603#structure=10289
 xref: http://atlas.brain-map.org/atlas?atlas=138322605#structure=10289
 xref: http://atlas.brain-map.org/atlas?atlas=265297126#structure=10289
 xref: http://atlas.brain-map.org/atlas?atlas=3#structure=10289
-is_a: UBERON:0034893
-intersection_of: UBERON:0034893
-intersection_of: RO:0002162 NCBITaxon:9606
 relationship: BFO:0000050 DHBA:10288 ! insular neocortex
-relationship: BFO:0000050 NCBITaxon:9606
-relationship: RO:0002162 NCBITaxon:9606
 property_value: IAO:0000028 "Idg" xsd:string
-property_value: IAO:0000589 "agranular insular cortex (human)" xsd:string
 property_value: prefLabel "dysgranular insular cortex  ( human dev )" xsd:string
 
 [Term]
@@ -3141,14 +3135,14 @@ xref: http://atlas.brain-map.org/atlas?atlas=138322603#structure=10373
 xref: http://atlas.brain-map.org/atlas?atlas=138322605#structure=10373
 xref: http://atlas.brain-map.org/atlas?atlas=265297126#structure=10373
 xref: http://atlas.brain-map.org/atlas?atlas=3#structure=10373
-is_a: UBERON:0002656
-intersection_of: UBERON:0002656
+is_a: UBERON:0002891
+intersection_of: UBERON:0002891
 intersection_of: RO:0002162 NCBITaxon:9606
 relationship: BFO:0000050 DHBA:10372 ! corticomedial nuclear group
 relationship: BFO:0000050 NCBITaxon:9606
 relationship: RO:0002162 NCBITaxon:9606
 property_value: IAO:0000028 "Co" xsd:string
-property_value: IAO:0000589 "periamygdaloid area (human)" xsd:string
+property_value: IAO:0000589 "cortical amygdaloid nucleus (human)" xsd:string
 property_value: prefLabel "cortical amygdaloid nuclei  ( human dev )" xsd:string
 
 [Term]
@@ -6249,14 +6243,14 @@ xref: http://atlas.brain-map.org/atlas?atlas=138322603#structure=10577
 xref: http://atlas.brain-map.org/atlas?atlas=138322605#structure=10577
 xref: http://atlas.brain-map.org/atlas?atlas=265297126#structure=10577
 xref: http://atlas.brain-map.org/atlas?atlas=3#structure=10577
-is_a: UBERON:0004680
-intersection_of: UBERON:0004680
+is_a: UBERON:0002940
+intersection_of: UBERON:0002940
 intersection_of: RO:0002162 NCBITaxon:9606
 relationship: BFO:0000050 DHBA:10576 ! fornix
 relationship: BFO:0000050 NCBITaxon:9606
 relationship: RO:0002162 NCBITaxon:9606
 property_value: IAO:0000028 "fx-co" xsd:string
-property_value: IAO:0000589 "body of fornix (human)" xsd:string
+property_value: IAO:0000589 "anterior column of fornix (human)" xsd:string
 property_value: prefLabel "column of the fornix  ( human dev )" xsd:string
 
 [Term]
@@ -7473,14 +7467,8 @@ xref: http://atlas.brain-map.org/atlas?atlas=138322603#structure=10651
 xref: http://atlas.brain-map.org/atlas?atlas=138322605#structure=10651
 xref: http://atlas.brain-map.org/atlas?atlas=265297126#structure=10651
 xref: http://atlas.brain-map.org/atlas?atlas=3#structure=10651
-is_a: UBERON:0002289
-intersection_of: UBERON:0002289
-intersection_of: RO:0002162 NCBITaxon:9606
 relationship: BFO:0000050 DHBA:10648 ! midbrain (mesencephalon)
-relationship: BFO:0000050 NCBITaxon:9606
-relationship: RO:0002162 NCBITaxon:9606
 property_value: IAO:0000028 "MV" xsd:string
-property_value: IAO:0000589 "midbrain cerebral aqueduct (human)" xsd:string
 property_value: prefLabel "ventricle of midbrain  ( human dev )" xsd:string
 
 [Term]
@@ -23457,14 +23445,8 @@ xref: http://atlas.brain-map.org/atlas?atlas=138322603#structure=12110
 xref: http://atlas.brain-map.org/atlas?atlas=138322605#structure=12110
 xref: http://atlas.brain-map.org/atlas?atlas=265297126#structure=12110
 xref: http://atlas.brain-map.org/atlas?atlas=3#structure=12110
-is_a: UBERON:0002721
-intersection_of: UBERON:0002721
-intersection_of: RO:0002162 NCBITaxon:9606
 relationship: BFO:0000050 DHBA:10611 ! primary sulci
-relationship: BFO:0000050 NCBITaxon:9606
-relationship: RO:0002162 NCBITaxon:9606
 property_value: IAO:0000028 "tranf" xsd:string
-property_value: IAO:0000589 "lateral sulcus (human)" xsd:string
 property_value: prefLabel "transverse cerebral  fissure  ( human dev )" xsd:string
 
 [Term]
@@ -27903,14 +27885,8 @@ xref: http://atlas.brain-map.org/atlas?atlas=138322603#structure=12414
 xref: http://atlas.brain-map.org/atlas?atlas=138322605#structure=12414
 xref: http://atlas.brain-map.org/atlas?atlas=265297126#structure=12414
 xref: http://atlas.brain-map.org/atlas?atlas=3#structure=12414
-is_a: UBERON:0002147
-intersection_of: UBERON:0002147
-intersection_of: RO:0002162 NCBITaxon:9606
 relationship: BFO:0000050 DHBA:12406 ! pontine nucleus
-relationship: BFO:0000050 NCBITaxon:9606
-relationship: RO:0002162 NCBITaxon:9606
 property_value: IAO:0000028 "RTg" xsd:string
-property_value: IAO:0000589 "reticulotegmental nucleus (human)" xsd:string
 property_value: prefLabel "reticulotegmental nucleus  ( human dev )" xsd:string
 
 [Term]
@@ -39993,14 +39969,14 @@ xref: http://atlas.brain-map.org/atlas?atlas=138322603#structure=146034836
 xref: http://atlas.brain-map.org/atlas?atlas=138322605#structure=146034836
 xref: http://atlas.brain-map.org/atlas?atlas=265297126#structure=146034836
 xref: http://atlas.brain-map.org/atlas?atlas=3#structure=146034836
-is_a: UBERON:0013541
-intersection_of: UBERON:0013541
+is_a: UBERON:0025763
+intersection_of: UBERON:0025763
 intersection_of: RO:0002162 NCBITaxon:9606
 relationship: BFO:0000050 DHBA:10630 ! secondary sulci
 relationship: BFO:0000050 NCBITaxon:9606
 relationship: RO:0002162 NCBITaxon:9606
 property_value: IAO:0000028 "ros" xsd:string
-property_value: IAO:0000589 "Brodmann (1909) area 10 (human)" xsd:string
+property_value: IAO:0000589 "rostral sulcus (human)" xsd:string
 property_value: prefLabel "rostral sulcus  ( human dev )" xsd:string
 
 [Term]
@@ -43359,14 +43335,8 @@ xref: http://atlas.brain-map.org/atlas?atlas=138322603#structure=266441669
 xref: http://atlas.brain-map.org/atlas?atlas=138322605#structure=266441669
 xref: http://atlas.brain-map.org/atlas?atlas=265297126#structure=266441669
 xref: http://atlas.brain-map.org/atlas?atlas=3#structure=266441669
-is_a: UBERON:0013531
-intersection_of: UBERON:0013531
-intersection_of: RO:0002162 NCBITaxon:9606
 relationship: BFO:0000050 DHBA:12156 ! cingulate gyrus
-relationship: BFO:0000050 NCBITaxon:9606
-relationship: RO:0002162 NCBITaxon:9606
 property_value: IAO:0000028 "CgGrs" xsd:string
-property_value: IAO:0000589 "retrosplenial region (human)" xsd:string
 property_value: prefLabel "cingulate gyrus, retrospleninal part  ( human dev )" xsd:string
 
 [Term]
@@ -44446,8 +44416,8 @@ id: NCBITaxon:9606
 property_value: prefLabel "Homo sapiens" xsd:string
 
 [Term]
-id: UBERON:0000000
-property_value: prefLabel "processual entity" xsd:string
+id: UBERON:0000001
+property_value: prefLabel "gross anatomical part" xsd:string
 
 [Term]
 id: UBERON:0000005
@@ -47211,7 +47181,7 @@ property_value: prefLabel "descending thoracic aorta" xsd:string
 
 [Term]
 id: UBERON:0002346
-property_value: prefLabel "neurectoderm" xsd:string
+property_value: prefLabel "neuroectoderm" xsd:string
 
 [Term]
 id: UBERON:0002347
@@ -48354,6 +48324,10 @@ id: UBERON:0002890
 property_value: prefLabel "anterior amygdaloid area" xsd:string
 
 [Term]
+id: UBERON:0002891
+property_value: prefLabel "cortical amygdaloid nucleus" xsd:string
+
+[Term]
 id: UBERON:0002893
 property_value: prefLabel "nucleus of lateral olfactory tract" xsd:string
 
@@ -48472,6 +48446,10 @@ property_value: prefLabel "parvocellular part of red nucleus" xsd:string
 [Term]
 id: UBERON:0002939
 property_value: prefLabel "ventral posteroinferior nucleus" xsd:string
+
+[Term]
+id: UBERON:0002940
+property_value: prefLabel "anterior column of fornix" xsd:string
 
 [Term]
 id: UBERON:0002942
@@ -52934,10 +52912,6 @@ id: UBERON:0007617
 property_value: prefLabel "synovial cavity of joint" xsd:string
 
 [Term]
-id: UBERON:0007625
-property_value: prefLabel "pigment epithelium of eye" xsd:string
-
-[Term]
 id: UBERON:0007626
 property_value: prefLabel "subparaventricular zone" xsd:string
 
@@ -54922,10 +54896,6 @@ id: UBERON:0013531
 property_value: prefLabel "retrosplenial region" xsd:string
 
 [Term]
-id: UBERON:0013541
-property_value: prefLabel "Brodmann (1909) area 10" xsd:string
-
-[Term]
 id: UBERON:0013559
 property_value: prefLabel "Brodmann (1909) area 28" xsd:string
 
@@ -56274,6 +56244,10 @@ id: UBERON:0025677
 property_value: prefLabel "paravermis parts of the cerebellar cortex" xsd:string
 
 [Term]
+id: UBERON:0025763
+property_value: prefLabel "rostral sulcus" xsd:string
+
+[Term]
 id: UBERON:0027285
 property_value: prefLabel "paravermis lobule area" xsd:string
 
@@ -57400,4 +57374,12 @@ property_value: prefLabel "stomach lamina propria" xsd:string
 [Term]
 id: UBERON:8600140
 property_value: prefLabel "rectum lamina propria" xsd:string
+
+[Term]
+id: UBERON:8850001
+property_value: prefLabel "epithelium of anorectum" xsd:string
+
+[Term]
+id: UBERON:8930191
+property_value: prefLabel "spleen connective tissue" xsd:string
 

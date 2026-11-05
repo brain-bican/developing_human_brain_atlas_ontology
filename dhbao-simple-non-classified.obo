@@ -1,11 +1,11 @@
 format-version: 1.2
-data-version: https://purl.brain-bican.org/ontology/dhbao/releases/2025-11-13/dhbao-simple-non-classified.owl
+data-version: https://purl.brain-bican.org/ontology/dhbao/releases/2026-11-05/dhbao-simple-non-classified.owl
 ontology: https://purl.brain-bican.org/ontology/dhbao/dhbao-simple-non-classified.owl
 property_value: http://purl.org/dc/terms/description "An application ontology built by combining ontologised versions of the Allen Institute Developing Human Brain Atlas (DHBA) StructureGraph mapped to Uberon." xsd:string
 property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/unspecified
 property_value: http://purl.org/dc/terms/title "Developing Human Brain Atlas Ontology" xsd:string
 property_value: IAO:0000700 DHBA:10155
-property_value: owl:versionInfo "2025-11-13" xsd:string
+property_value: owl:versionInfo "2026-11-05" xsd:string
 
 [Term]
 id: DHBA:10153
@@ -1569,10 +1569,7 @@ xref: http://atlas.brain-map.org/atlas?atlas=138322605#structure=10289
 xref: http://atlas.brain-map.org/atlas?atlas=265297126#structure=10289
 xref: http://atlas.brain-map.org/atlas?atlas=3#structure=10289
 relationship: BFO:0000050 DHBA:10288
-relationship: BFO:0000050 NCBITaxon:9606
-relationship: RO:0002162 NCBITaxon:9606
 property_value: IAO:0000028 "Idg" xsd:string
-property_value: IAO:0000589 "agranular insular cortex (human)" xsd:string
 property_value: prefLabel "dysgranular insular cortex  ( human dev )" xsd:string
 
 [Term]
@@ -2665,7 +2662,7 @@ relationship: BFO:0000050 DHBA:10372
 relationship: BFO:0000050 NCBITaxon:9606
 relationship: RO:0002162 NCBITaxon:9606
 property_value: IAO:0000028 "Co" xsd:string
-property_value: IAO:0000589 "periamygdaloid area (human)" xsd:string
+property_value: IAO:0000589 "cortical amygdaloid nucleus (human)" xsd:string
 property_value: prefLabel "cortical amygdaloid nuclei  ( human dev )" xsd:string
 
 [Term]
@@ -5229,7 +5226,7 @@ relationship: BFO:0000050 DHBA:10576
 relationship: BFO:0000050 NCBITaxon:9606
 relationship: RO:0002162 NCBITaxon:9606
 property_value: IAO:0000028 "fx-co" xsd:string
-property_value: IAO:0000589 "body of fornix (human)" xsd:string
+property_value: IAO:0000589 "anterior column of fornix (human)" xsd:string
 property_value: prefLabel "column of the fornix  ( human dev )" xsd:string
 
 [Term]
@@ -6208,10 +6205,7 @@ xref: http://atlas.brain-map.org/atlas?atlas=138322605#structure=10651
 xref: http://atlas.brain-map.org/atlas?atlas=265297126#structure=10651
 xref: http://atlas.brain-map.org/atlas?atlas=3#structure=10651
 relationship: BFO:0000050 DHBA:10648
-relationship: BFO:0000050 NCBITaxon:9606
-relationship: RO:0002162 NCBITaxon:9606
 property_value: IAO:0000028 "MV" xsd:string
-property_value: IAO:0000589 "midbrain cerebral aqueduct (human)" xsd:string
 property_value: prefLabel "ventricle of midbrain  ( human dev )" xsd:string
 
 [Term]
@@ -20635,10 +20629,7 @@ xref: http://atlas.brain-map.org/atlas?atlas=138322605#structure=12110
 xref: http://atlas.brain-map.org/atlas?atlas=265297126#structure=12110
 xref: http://atlas.brain-map.org/atlas?atlas=3#structure=12110
 relationship: BFO:0000050 DHBA:10611
-relationship: BFO:0000050 NCBITaxon:9606
-relationship: RO:0002162 NCBITaxon:9606
 property_value: IAO:0000028 "tranf" xsd:string
-property_value: IAO:0000589 "lateral sulcus (human)" xsd:string
 property_value: prefLabel "transverse cerebral  fissure  ( human dev )" xsd:string
 
 [Term]
@@ -24363,10 +24354,7 @@ xref: http://atlas.brain-map.org/atlas?atlas=138322605#structure=12414
 xref: http://atlas.brain-map.org/atlas?atlas=265297126#structure=12414
 xref: http://atlas.brain-map.org/atlas?atlas=3#structure=12414
 relationship: BFO:0000050 DHBA:12406
-relationship: BFO:0000050 NCBITaxon:9606
-relationship: RO:0002162 NCBITaxon:9606
 property_value: IAO:0000028 "RTg" xsd:string
-property_value: IAO:0000589 "reticulotegmental nucleus (human)" xsd:string
 property_value: prefLabel "reticulotegmental nucleus  ( human dev )" xsd:string
 
 [Term]
@@ -34926,7 +34914,7 @@ relationship: BFO:0000050 DHBA:10630
 relationship: BFO:0000050 NCBITaxon:9606
 relationship: RO:0002162 NCBITaxon:9606
 property_value: IAO:0000028 "ros" xsd:string
-property_value: IAO:0000589 "Brodmann (1909) area 10 (human)" xsd:string
+property_value: IAO:0000589 "rostral sulcus (human)" xsd:string
 property_value: prefLabel "rostral sulcus  ( human dev )" xsd:string
 
 [Term]
@@ -37886,10 +37874,7 @@ xref: http://atlas.brain-map.org/atlas?atlas=138322605#structure=266441669
 xref: http://atlas.brain-map.org/atlas?atlas=265297126#structure=266441669
 xref: http://atlas.brain-map.org/atlas?atlas=3#structure=266441669
 relationship: BFO:0000050 DHBA:12156
-relationship: BFO:0000050 NCBITaxon:9606
-relationship: RO:0002162 NCBITaxon:9606
 property_value: IAO:0000028 "CgGrs" xsd:string
-property_value: IAO:0000589 "retrosplenial region (human)" xsd:string
 property_value: prefLabel "cingulate gyrus, retrospleninal part  ( human dev )" xsd:string
 
 [Term]

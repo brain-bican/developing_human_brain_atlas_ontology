@@ -19,9 +19,9 @@
         "val" : "Developing Human Brain Atlas Ontology"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2025-11-13"
+        "val" : "2026-11-05"
       } ],
-      "version" : "https://purl.brain-bican.org/ontology/dhbao/releases/2025-11-13/dhbao-base.json"
+      "version" : "https://purl.brain-bican.org/ontology/dhbao/releases/2026-11-05/dhbao-base.json"
     },
     "nodes" : [ {
       "id" : "http://purl.obolibrary.org/obo/NCBITaxon_1",
@@ -312,12 +312,12 @@
         } ]
       }
     }, {
-      "id" : "http://purl.obolibrary.org/obo/UBERON_0000000",
+      "id" : "http://purl.obolibrary.org/obo/UBERON_0000001",
       "type" : "CLASS",
       "meta" : {
         "basicPropertyValues" : [ {
           "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
-          "val" : "processual entity"
+          "val" : "gross anatomical part"
         } ]
       }
     }, {
@@ -6536,7 +6536,7 @@
       "meta" : {
         "basicPropertyValues" : [ {
           "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
-          "val" : "neurectoderm"
+          "val" : "neuroectoderm"
         } ]
       }
     }, {
@@ -9105,6 +9105,15 @@
         } ]
       }
     }, {
+      "id" : "http://purl.obolibrary.org/obo/UBERON_0002891",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "val" : "cortical amygdaloid nucleus"
+        } ]
+      }
+    }, {
       "id" : "http://purl.obolibrary.org/obo/UBERON_0002893",
       "type" : "CLASS",
       "meta" : {
@@ -9372,6 +9381,15 @@
         "basicPropertyValues" : [ {
           "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
           "val" : "ventral posteroinferior nucleus"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/UBERON_0002940",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "val" : "anterior column of fornix"
         } ]
       }
     }, {
@@ -19410,15 +19428,6 @@
         } ]
       }
     }, {
-      "id" : "http://purl.obolibrary.org/obo/UBERON_0007625",
-      "type" : "CLASS",
-      "meta" : {
-        "basicPropertyValues" : [ {
-          "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
-          "val" : "pigment epithelium of eye"
-        } ]
-      }
-    }, {
       "id" : "http://purl.obolibrary.org/obo/UBERON_0007626",
       "type" : "CLASS",
       "meta" : {
@@ -23883,15 +23892,6 @@
         } ]
       }
     }, {
-      "id" : "http://purl.obolibrary.org/obo/UBERON_0013541",
-      "type" : "CLASS",
-      "meta" : {
-        "basicPropertyValues" : [ {
-          "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
-          "val" : "Brodmann (1909) area 10"
-        } ]
-      }
-    }, {
       "id" : "http://purl.obolibrary.org/obo/UBERON_0013559",
       "type" : "CLASS",
       "meta" : {
@@ -26925,6 +26925,15 @@
         } ]
       }
     }, {
+      "id" : "http://purl.obolibrary.org/obo/UBERON_0025763",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "val" : "rostral sulcus"
+        } ]
+      }
+    }, {
       "id" : "http://purl.obolibrary.org/obo/UBERON_0027285",
       "type" : "CLASS",
       "meta" : {
@@ -29460,6 +29469,24 @@
         "basicPropertyValues" : [ {
           "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
           "val" : "rectum lamina propria"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/UBERON_8850001",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "val" : "epithelium of anorectum"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/UBERON_8930191",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "val" : "spleen connective tissue"
         } ]
       }
     }, {
@@ -33061,9 +33088,6 @@
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000028",
           "val" : "Idg"
         }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000589",
-          "val" : "agranular insular cortex (human)"
-        }, {
           "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
           "val" : "dysgranular insular cortex  ( human dev )"
         } ]
@@ -35400,7 +35424,7 @@
           "val" : "Co"
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000589",
-          "val" : "periamygdaloid area (human)"
+          "val" : "cortical amygdaloid nucleus (human)"
         }, {
           "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
           "val" : "cortical amygdaloid nuclei  ( human dev )"
@@ -40994,7 +41018,7 @@
           "val" : "fx-co"
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000589",
-          "val" : "body of fornix (human)"
+          "val" : "anterior column of fornix (human)"
         }, {
           "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
           "val" : "column of the fornix  ( human dev )"
@@ -43084,9 +43108,6 @@
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000028",
           "val" : "MV"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000589",
-          "val" : "midbrain cerebral aqueduct (human)"
         }, {
           "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
           "val" : "ventricle of midbrain  ( human dev )"
@@ -76817,9 +76838,6 @@
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000028",
           "val" : "tranf"
         }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000589",
-          "val" : "lateral sulcus (human)"
-        }, {
           "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
           "val" : "transverse cerebral  fissure  ( human dev )"
         } ]
@@ -85059,9 +85077,6 @@
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000028",
           "val" : "RTg"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000589",
-          "val" : "reticulotegmental nucleus (human)"
         }, {
           "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
           "val" : "reticulotegmental nucleus  ( human dev )"
@@ -109166,7 +109181,7 @@
           "val" : "ros"
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000589",
-          "val" : "Brodmann (1909) area 10 (human)"
+          "val" : "rostral sulcus (human)"
         }, {
           "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
           "val" : "rostral sulcus  ( human dev )"
@@ -115968,9 +115983,6 @@
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000028",
           "val" : "CgGrs"
         }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000589",
-          "val" : "retrosplenial region (human)"
-        }, {
           "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
           "val" : "cingulate gyrus, retrospleninal part  ( human dev )"
         } ]
@@ -118828,20 +118840,8 @@
       "obj" : "http://purl.obolibrary.org/obo/NCBITaxon_9606"
     }, {
       "sub" : "https://purl.brain-bican.org/ontology/dhbao/DHBA_10289",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/UBERON_0034893"
-    }, {
-      "sub" : "https://purl.brain-bican.org/ontology/dhbao/DHBA_10289",
-      "pred" : "http://purl.obolibrary.org/obo/BFO_0000050",
-      "obj" : "http://purl.obolibrary.org/obo/NCBITaxon_9606"
-    }, {
-      "sub" : "https://purl.brain-bican.org/ontology/dhbao/DHBA_10289",
       "pred" : "http://purl.obolibrary.org/obo/BFO_0000050",
       "obj" : "https://purl.brain-bican.org/ontology/dhbao/DHBA_10288"
-    }, {
-      "sub" : "https://purl.brain-bican.org/ontology/dhbao/DHBA_10289",
-      "pred" : "http://purl.obolibrary.org/obo/RO_0002162",
-      "obj" : "http://purl.obolibrary.org/obo/NCBITaxon_9606"
     }, {
       "sub" : "https://purl.brain-bican.org/ontology/dhbao/DHBA_10290",
       "pred" : "is_a",
@@ -119881,7 +119881,7 @@
     }, {
       "sub" : "https://purl.brain-bican.org/ontology/dhbao/DHBA_10373",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/UBERON_0002656"
+      "obj" : "http://purl.obolibrary.org/obo/UBERON_0002891"
     }, {
       "sub" : "https://purl.brain-bican.org/ontology/dhbao/DHBA_10373",
       "pred" : "http://purl.obolibrary.org/obo/BFO_0000050",
@@ -122057,7 +122057,7 @@
     }, {
       "sub" : "https://purl.brain-bican.org/ontology/dhbao/DHBA_10577",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/UBERON_0004680"
+      "obj" : "http://purl.obolibrary.org/obo/UBERON_0002940"
     }, {
       "sub" : "https://purl.brain-bican.org/ontology/dhbao/DHBA_10577",
       "pred" : "http://purl.obolibrary.org/obo/BFO_0000050",
@@ -123024,20 +123024,8 @@
       "obj" : "http://purl.obolibrary.org/obo/NCBITaxon_9606"
     }, {
       "sub" : "https://purl.brain-bican.org/ontology/dhbao/DHBA_10651",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/UBERON_0002289"
-    }, {
-      "sub" : "https://purl.brain-bican.org/ontology/dhbao/DHBA_10651",
-      "pred" : "http://purl.obolibrary.org/obo/BFO_0000050",
-      "obj" : "http://purl.obolibrary.org/obo/NCBITaxon_9606"
-    }, {
-      "sub" : "https://purl.brain-bican.org/ontology/dhbao/DHBA_10651",
       "pred" : "http://purl.obolibrary.org/obo/BFO_0000050",
       "obj" : "https://purl.brain-bican.org/ontology/dhbao/DHBA_10648"
-    }, {
-      "sub" : "https://purl.brain-bican.org/ontology/dhbao/DHBA_10651",
-      "pred" : "http://purl.obolibrary.org/obo/RO_0002162",
-      "obj" : "http://purl.obolibrary.org/obo/NCBITaxon_9606"
     }, {
       "sub" : "https://purl.brain-bican.org/ontology/dhbao/DHBA_10652",
       "pred" : "http://purl.obolibrary.org/obo/BFO_0000050",
@@ -129252,20 +129240,8 @@
       "obj" : "https://purl.brain-bican.org/ontology/dhbao/DHBA_10621"
     }, {
       "sub" : "https://purl.brain-bican.org/ontology/dhbao/DHBA_12110",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/UBERON_0002721"
-    }, {
-      "sub" : "https://purl.brain-bican.org/ontology/dhbao/DHBA_12110",
-      "pred" : "http://purl.obolibrary.org/obo/BFO_0000050",
-      "obj" : "http://purl.obolibrary.org/obo/NCBITaxon_9606"
-    }, {
-      "sub" : "https://purl.brain-bican.org/ontology/dhbao/DHBA_12110",
       "pred" : "http://purl.obolibrary.org/obo/BFO_0000050",
       "obj" : "https://purl.brain-bican.org/ontology/dhbao/DHBA_10611"
-    }, {
-      "sub" : "https://purl.brain-bican.org/ontology/dhbao/DHBA_12110",
-      "pred" : "http://purl.obolibrary.org/obo/RO_0002162",
-      "obj" : "http://purl.obolibrary.org/obo/NCBITaxon_9606"
     }, {
       "sub" : "https://purl.brain-bican.org/ontology/dhbao/DHBA_12111",
       "pred" : "http://purl.obolibrary.org/obo/BFO_0000050",
@@ -132124,20 +132100,8 @@
       "obj" : "http://purl.obolibrary.org/obo/NCBITaxon_9606"
     }, {
       "sub" : "https://purl.brain-bican.org/ontology/dhbao/DHBA_12414",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/UBERON_0002147"
-    }, {
-      "sub" : "https://purl.brain-bican.org/ontology/dhbao/DHBA_12414",
-      "pred" : "http://purl.obolibrary.org/obo/BFO_0000050",
-      "obj" : "http://purl.obolibrary.org/obo/NCBITaxon_9606"
-    }, {
-      "sub" : "https://purl.brain-bican.org/ontology/dhbao/DHBA_12414",
       "pred" : "http://purl.obolibrary.org/obo/BFO_0000050",
       "obj" : "https://purl.brain-bican.org/ontology/dhbao/DHBA_12406"
-    }, {
-      "sub" : "https://purl.brain-bican.org/ontology/dhbao/DHBA_12414",
-      "pred" : "http://purl.obolibrary.org/obo/RO_0002162",
-      "obj" : "http://purl.obolibrary.org/obo/NCBITaxon_9606"
     }, {
       "sub" : "https://purl.brain-bican.org/ontology/dhbao/DHBA_12416",
       "pred" : "is_a",
@@ -138245,7 +138209,7 @@
     }, {
       "sub" : "https://purl.brain-bican.org/ontology/dhbao/DHBA_146034836",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/UBERON_0013541"
+      "obj" : "http://purl.obolibrary.org/obo/UBERON_0025763"
     }, {
       "sub" : "https://purl.brain-bican.org/ontology/dhbao/DHBA_146034836",
       "pred" : "http://purl.obolibrary.org/obo/BFO_0000050",
@@ -139856,20 +139820,8 @@
       "obj" : "https://purl.brain-bican.org/ontology/dhbao/DHBA_10630"
     }, {
       "sub" : "https://purl.brain-bican.org/ontology/dhbao/DHBA_266441669",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/UBERON_0013531"
-    }, {
-      "sub" : "https://purl.brain-bican.org/ontology/dhbao/DHBA_266441669",
-      "pred" : "http://purl.obolibrary.org/obo/BFO_0000050",
-      "obj" : "http://purl.obolibrary.org/obo/NCBITaxon_9606"
-    }, {
-      "sub" : "https://purl.brain-bican.org/ontology/dhbao/DHBA_266441669",
       "pred" : "http://purl.obolibrary.org/obo/BFO_0000050",
       "obj" : "https://purl.brain-bican.org/ontology/dhbao/DHBA_12156"
-    }, {
-      "sub" : "https://purl.brain-bican.org/ontology/dhbao/DHBA_266441669",
-      "pred" : "http://purl.obolibrary.org/obo/RO_0002162",
-      "obj" : "http://purl.obolibrary.org/obo/NCBITaxon_9606"
     }, {
       "sub" : "https://purl.brain-bican.org/ontology/dhbao/DHBA_266441673",
       "pred" : "http://purl.obolibrary.org/obo/BFO_0000050",
@@ -140437,13 +140389,6 @@
         "fillerId" : "http://purl.obolibrary.org/obo/NCBITaxon_9606"
       } ]
     }, {
-      "definedClassId" : "https://purl.brain-bican.org/ontology/dhbao/DHBA_10289",
-      "genusIds" : [ "http://purl.obolibrary.org/obo/UBERON_0034893" ],
-      "restrictions" : [ {
-        "propertyId" : "http://purl.obolibrary.org/obo/RO_0002162",
-        "fillerId" : "http://purl.obolibrary.org/obo/NCBITaxon_9606"
-      } ]
-    }, {
       "definedClassId" : "https://purl.brain-bican.org/ontology/dhbao/DHBA_10290",
       "genusIds" : [ "http://purl.obolibrary.org/obo/UBERON_0034892" ],
       "restrictions" : [ {
@@ -140858,7 +140803,7 @@
       } ]
     }, {
       "definedClassId" : "https://purl.brain-bican.org/ontology/dhbao/DHBA_10373",
-      "genusIds" : [ "http://purl.obolibrary.org/obo/UBERON_0002656" ],
+      "genusIds" : [ "http://purl.obolibrary.org/obo/UBERON_0002891" ],
       "restrictions" : [ {
         "propertyId" : "http://purl.obolibrary.org/obo/RO_0002162",
         "fillerId" : "http://purl.obolibrary.org/obo/NCBITaxon_9606"
@@ -141656,7 +141601,7 @@
       } ]
     }, {
       "definedClassId" : "https://purl.brain-bican.org/ontology/dhbao/DHBA_10577",
-      "genusIds" : [ "http://purl.obolibrary.org/obo/UBERON_0004680" ],
+      "genusIds" : [ "http://purl.obolibrary.org/obo/UBERON_0002940" ],
       "restrictions" : [ {
         "propertyId" : "http://purl.obolibrary.org/obo/RO_0002162",
         "fillerId" : "http://purl.obolibrary.org/obo/NCBITaxon_9606"
@@ -142042,13 +141987,6 @@
     }, {
       "definedClassId" : "https://purl.brain-bican.org/ontology/dhbao/DHBA_10650",
       "genusIds" : [ "http://purl.obolibrary.org/obo/UBERON_0016554" ],
-      "restrictions" : [ {
-        "propertyId" : "http://purl.obolibrary.org/obo/RO_0002162",
-        "fillerId" : "http://purl.obolibrary.org/obo/NCBITaxon_9606"
-      } ]
-    }, {
-      "definedClassId" : "https://purl.brain-bican.org/ontology/dhbao/DHBA_10651",
-      "genusIds" : [ "http://purl.obolibrary.org/obo/UBERON_0002289" ],
       "restrictions" : [ {
         "propertyId" : "http://purl.obolibrary.org/obo/RO_0002162",
         "fillerId" : "http://purl.obolibrary.org/obo/NCBITaxon_9606"
@@ -142672,13 +142610,6 @@
     }, {
       "definedClassId" : "https://purl.brain-bican.org/ontology/dhbao/DHBA_12106",
       "genusIds" : [ "http://purl.obolibrary.org/obo/UBERON_0002689" ],
-      "restrictions" : [ {
-        "propertyId" : "http://purl.obolibrary.org/obo/RO_0002162",
-        "fillerId" : "http://purl.obolibrary.org/obo/NCBITaxon_9606"
-      } ]
-    }, {
-      "definedClassId" : "https://purl.brain-bican.org/ontology/dhbao/DHBA_12110",
-      "genusIds" : [ "http://purl.obolibrary.org/obo/UBERON_0002721" ],
       "restrictions" : [ {
         "propertyId" : "http://purl.obolibrary.org/obo/RO_0002162",
         "fillerId" : "http://purl.obolibrary.org/obo/NCBITaxon_9606"
@@ -143645,13 +143576,6 @@
     }, {
       "definedClassId" : "https://purl.brain-bican.org/ontology/dhbao/DHBA_12413",
       "genusIds" : [ "http://purl.obolibrary.org/obo/UBERON_0002142" ],
-      "restrictions" : [ {
-        "propertyId" : "http://purl.obolibrary.org/obo/RO_0002162",
-        "fillerId" : "http://purl.obolibrary.org/obo/NCBITaxon_9606"
-      } ]
-    }, {
-      "definedClassId" : "https://purl.brain-bican.org/ontology/dhbao/DHBA_12414",
-      "genusIds" : [ "http://purl.obolibrary.org/obo/UBERON_0002147" ],
       "restrictions" : [ {
         "propertyId" : "http://purl.obolibrary.org/obo/RO_0002162",
         "fillerId" : "http://purl.obolibrary.org/obo/NCBITaxon_9606"
@@ -145114,7 +145038,7 @@
       } ]
     }, {
       "definedClassId" : "https://purl.brain-bican.org/ontology/dhbao/DHBA_146034836",
-      "genusIds" : [ "http://purl.obolibrary.org/obo/UBERON_0013541" ],
+      "genusIds" : [ "http://purl.obolibrary.org/obo/UBERON_0025763" ],
       "restrictions" : [ {
         "propertyId" : "http://purl.obolibrary.org/obo/RO_0002162",
         "fillerId" : "http://purl.obolibrary.org/obo/NCBITaxon_9606"
@@ -145451,13 +145375,6 @@
     }, {
       "definedClassId" : "https://purl.brain-bican.org/ontology/dhbao/DHBA_266441661",
       "genusIds" : [ "http://purl.obolibrary.org/obo/UBERON_0022283" ],
-      "restrictions" : [ {
-        "propertyId" : "http://purl.obolibrary.org/obo/RO_0002162",
-        "fillerId" : "http://purl.obolibrary.org/obo/NCBITaxon_9606"
-      } ]
-    }, {
-      "definedClassId" : "https://purl.brain-bican.org/ontology/dhbao/DHBA_266441669",
-      "genusIds" : [ "http://purl.obolibrary.org/obo/UBERON_0013531" ],
       "restrictions" : [ {
         "propertyId" : "http://purl.obolibrary.org/obo/RO_0002162",
         "fillerId" : "http://purl.obolibrary.org/obo/NCBITaxon_9606"

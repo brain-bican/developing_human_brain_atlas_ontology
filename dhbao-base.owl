@@ -12,13 +12,13 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="https://purl.brain-bican.org/ontology/dhbao/dhbao-base.owl">
-        <owl:versionIRI rdf:resource="https://purl.brain-bican.org/ontology/dhbao/releases/2025-11-13/dhbao-base.owl"/>
+        <owl:versionIRI rdf:resource="https://purl.brain-bican.org/ontology/dhbao/releases/2026-11-05/dhbao-base.owl"/>
         <obo:IAO_0000700 rdf:resource="https://purl.brain-bican.org/ontology/dhbao/DHBA_10155"/>
         <dc:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
         <terms:description>An application ontology built by combining ontologised versions of the Allen Institute Developing Human Brain Atlas (DHBA) StructureGraph mapped to Uberon.</terms:description>
         <terms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
         <terms:title>Developing Human Brain Atlas Ontology</terms:title>
-        <owl:versionInfo>2025-11-13</owl:versionInfo>
+        <owl:versionInfo>2026-11-05</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -390,10 +390,10 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/UBERON_0000000 -->
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000001 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000000">
-        <skos:prefLabel>processual entity</skos:prefLabel>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000001">
+        <skos:prefLabel>gross anatomical part</skos:prefLabel>
     </owl:Class>
     
 
@@ -5921,7 +5921,7 @@
     <!-- http://purl.obolibrary.org/obo/UBERON_0002346 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002346">
-        <skos:prefLabel>neurectoderm</skos:prefLabel>
+        <skos:prefLabel>neuroectoderm</skos:prefLabel>
     </owl:Class>
     
 
@@ -8206,6 +8206,14 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002891 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002891">
+        <skos:prefLabel>cortical amygdaloid nucleus</skos:prefLabel>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/UBERON_0002893 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002893">
@@ -8442,6 +8450,14 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002939">
         <skos:prefLabel>ventral posteroinferior nucleus</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002940 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002940">
+        <skos:prefLabel>anterior column of fornix</skos:prefLabel>
     </owl:Class>
     
 
@@ -17366,14 +17382,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/UBERON_0007625 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0007625">
-        <skos:prefLabel>pigment epithelium of eye</skos:prefLabel>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/UBERON_0007626 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0007626">
@@ -21342,14 +21350,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/UBERON_0013541 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0013541">
-        <skos:prefLabel>Brodmann (1909) area 10</skos:prefLabel>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/UBERON_0013559 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0013559">
@@ -24046,6 +24046,14 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/UBERON_0025763 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0025763">
+        <skos:prefLabel>rostral sulcus</skos:prefLabel>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/UBERON_0027285 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0027285">
@@ -26298,6 +26306,22 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_8600140">
         <skos:prefLabel>rectum lamina propria</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_8850001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_8850001">
+        <skos:prefLabel>epithelium of anorectum</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_8930191 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_8930191">
+        <skos:prefLabel>spleen connective tissue</skos:prefLabel>
     </owl:Class>
     
 
@@ -29794,38 +29818,13 @@
     <!-- https://purl.brain-bican.org/ontology/dhbao/DHBA_10289 -->
 
     <owl:Class rdf:about="https://purl.brain-bican.org/ontology/dhbao/DHBA_10289">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0034893"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002162"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0034893"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="https://purl.brain-bican.org/ontology/dhbao/DHBA_10288"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002162"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000028>Idg</obo:IAO_0000028>
-        <obo:IAO_0000589>agranular insular cortex (human)</obo:IAO_0000589>
         <oboInOwl:hasDbXref>http://atlas.brain-map.org/atlas?atlas=138322603#structure=10289</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://atlas.brain-map.org/atlas?atlas=138322605#structure=10289</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://atlas.brain-map.org/atlas?atlas=265297126#structure=10289</oboInOwl:hasDbXref>
@@ -33040,7 +33039,7 @@
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0002656"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0002891"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002162"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
@@ -33048,7 +33047,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002656"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002891"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -33068,7 +33067,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000028>Co</obo:IAO_0000028>
-        <obo:IAO_0000589>periamygdaloid area (human)</obo:IAO_0000589>
+        <obo:IAO_0000589>cortical amygdaloid nucleus (human)</obo:IAO_0000589>
         <oboInOwl:hasDbXref>http://atlas.brain-map.org/atlas?atlas=138322603#structure=10373</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://atlas.brain-map.org/atlas?atlas=138322605#structure=10373</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://atlas.brain-map.org/atlas?atlas=265297126#structure=10373</oboInOwl:hasDbXref>
@@ -40132,7 +40131,7 @@
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0004680"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0002940"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002162"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
@@ -40140,7 +40139,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004680"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002940"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -40160,7 +40159,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000028>fx-co</obo:IAO_0000028>
-        <obo:IAO_0000589>body of fornix (human)</obo:IAO_0000589>
+        <obo:IAO_0000589>anterior column of fornix (human)</obo:IAO_0000589>
         <oboInOwl:hasDbXref>http://atlas.brain-map.org/atlas?atlas=138322603#structure=10577</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://atlas.brain-map.org/atlas?atlas=138322605#structure=10577</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://atlas.brain-map.org/atlas?atlas=265297126#structure=10577</oboInOwl:hasDbXref>
@@ -43083,38 +43082,13 @@
     <!-- https://purl.brain-bican.org/ontology/dhbao/DHBA_10651 -->
 
     <owl:Class rdf:about="https://purl.brain-bican.org/ontology/dhbao/DHBA_10651">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0002289"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002162"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002289"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="https://purl.brain-bican.org/ontology/dhbao/DHBA_10648"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002162"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000028>MV</obo:IAO_0000028>
-        <obo:IAO_0000589>midbrain cerebral aqueduct (human)</obo:IAO_0000589>
         <oboInOwl:hasDbXref>http://atlas.brain-map.org/atlas?atlas=138322603#structure=10651</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://atlas.brain-map.org/atlas?atlas=138322605#structure=10651</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://atlas.brain-map.org/atlas?atlas=265297126#structure=10651</oboInOwl:hasDbXref>
@@ -72360,38 +72334,13 @@
     <!-- https://purl.brain-bican.org/ontology/dhbao/DHBA_12110 -->
 
     <owl:Class rdf:about="https://purl.brain-bican.org/ontology/dhbao/DHBA_12110">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0002721"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002162"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002721"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="https://purl.brain-bican.org/ontology/dhbao/DHBA_10611"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002162"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000028>tranf</obo:IAO_0000028>
-        <obo:IAO_0000589>lateral sulcus (human)</obo:IAO_0000589>
         <oboInOwl:hasDbXref>http://atlas.brain-map.org/atlas?atlas=138322603#structure=12110</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://atlas.brain-map.org/atlas?atlas=138322605#structure=12110</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://atlas.brain-map.org/atlas?atlas=265297126#structure=12110</oboInOwl:hasDbXref>
@@ -82156,38 +82105,13 @@
     <!-- https://purl.brain-bican.org/ontology/dhbao/DHBA_12414 -->
 
     <owl:Class rdf:about="https://purl.brain-bican.org/ontology/dhbao/DHBA_12414">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0002147"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002162"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002147"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="https://purl.brain-bican.org/ontology/dhbao/DHBA_12406"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002162"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000028>RTg</obo:IAO_0000028>
-        <obo:IAO_0000589>reticulotegmental nucleus (human)</obo:IAO_0000589>
         <oboInOwl:hasDbXref>http://atlas.brain-map.org/atlas?atlas=138322603#structure=12414</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://atlas.brain-map.org/atlas?atlas=138322605#structure=12414</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://atlas.brain-map.org/atlas?atlas=265297126#structure=12414</oboInOwl:hasDbXref>
@@ -106347,7 +106271,7 @@
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0013541"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0025763"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002162"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
@@ -106355,7 +106279,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0013541"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0025763"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -106375,7 +106299,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000028>ros</obo:IAO_0000028>
-        <obo:IAO_0000589>Brodmann (1909) area 10 (human)</obo:IAO_0000589>
+        <obo:IAO_0000589>rostral sulcus (human)</obo:IAO_0000589>
         <oboInOwl:hasDbXref>http://atlas.brain-map.org/atlas?atlas=138322603#structure=146034836</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://atlas.brain-map.org/atlas?atlas=138322605#structure=146034836</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://atlas.brain-map.org/atlas?atlas=265297126#structure=146034836</oboInOwl:hasDbXref>
@@ -112945,38 +112869,13 @@
     <!-- https://purl.brain-bican.org/ontology/dhbao/DHBA_266441669 -->
 
     <owl:Class rdf:about="https://purl.brain-bican.org/ontology/dhbao/DHBA_266441669">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0013531"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002162"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0013531"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="https://purl.brain-bican.org/ontology/dhbao/DHBA_12156"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002162"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000028>CgGrs</obo:IAO_0000028>
-        <obo:IAO_0000589>retrosplenial region (human)</obo:IAO_0000589>
         <oboInOwl:hasDbXref>http://atlas.brain-map.org/atlas?atlas=138322603#structure=266441669</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://atlas.brain-map.org/atlas?atlas=138322605#structure=266441669</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://atlas.brain-map.org/atlas?atlas=265297126#structure=266441669</oboInOwl:hasDbXref>
