@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: https://purl.brain-bican.org/ontology/dhbao/releases/2026-11-05/dhbao-full.owl
+data-version: https://purl.brain-bican.org/ontology/dhbao/releases/2026-11-06/dhbao-full.owl
 subsetdef: added_by_HRA ""
 subsetdef: common_anatomy ""
 subsetdef: cumbo ""
@@ -47,7 +47,7 @@ property_value: http://purl.org/dc/terms/description "An application ontology bu
 property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/unspecified
 property_value: http://purl.org/dc/terms/title "Developing Human Brain Atlas Ontology" xsd:string
 property_value: IAO:0000700 DHBA:10155
-property_value: owl:versionInfo "2026-11-05" xsd:string
+property_value: owl:versionInfo "2026-11-06" xsd:string
 
 [Term]
 id: CL:0000000
