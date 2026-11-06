@@ -1,0 +1,1085 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://hkir-dev.github.io/developing_human_brain_atlas_ontology/uberon-qc/">
+      
+      
+        <link rel="prev" href="../main-flow/">
+      
+      
+        <link rel="next" href="../odk-workflows/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.17">
+    
+    
+      
+        <title>Uberon pin and full-Uberon QC - Developing Human Brain Atlas Ontology</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.bcfcd587.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#uberon-pin-and-full-uberon-qc" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Developing Human Brain Atlas Ontology" class="md-header__button md-logo" aria-label="Developing Human Brain Atlas Ontology" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Developing Human Brain Atlas Ontology
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Uberon pin and full-Uberon QC
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/hkir-dev/developing_human_brain_atlas_ontology/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Developing Human Brain Atlas Ontology" class="md-nav__button md-logo" aria-label="Developing Human Brain Atlas Ontology" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Developing Human Brain Atlas Ontology
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/hkir-dev/developing_human_brain_atlas_ontology/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Getting started
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cite/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cite
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    How-to guides
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            How-to guides
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../main-flow/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DHBAO workflow
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Uberon pin and full-Uberon QC
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Uberon pin and full-Uberon QC
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-the-check-catches" class="md-nav__link">
+    <span class="md-ellipsis">
+      What the check catches
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-known-inconsistency-list" class="md-nav__link">
+    <span class="md-ellipsis">
+      The known-inconsistency list
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fixing-a-listed-inconsistency" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fixing a listed inconsistency
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#everyday-prs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Everyday PRs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#explaining-a-reported-line" class="md-nav__link">
+    <span class="md-ellipsis">
+      Explaining a reported line
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bumping-the-uberon-release-before-refresh-imports-and-every-release" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bumping the Uberon release (before refresh-imports and every release)
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Standard ODK workflows
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            Standard ODK workflows
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../odk-workflows/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../odk-workflows/EditorsWorkflow/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Editors Workflow
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../odk-workflows/ReleaseWorkflow/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Release Workflow
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../odk-workflows/RepoManagement/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Manage your ODK Repository
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../odk-workflows/SettingUpDockerForODK/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Setting up Docker for ODK
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../odk-workflows/UpdateImports/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Imports management
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../odk-workflows/components/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Components management
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../odk-workflows/ManageDocumentation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Managing the documentation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../odk-workflows/ManageAutomatedTest/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Managing your automated testing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../odk-workflows/ContinuousIntegration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Continuous Integration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../odk-workflows/RepositoryFileStructure/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Your ODK Repository Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../contributing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contributing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Reference
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Reference
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Design Patterns
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            Design Patterns
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dosdp.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Design Patterns Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-the-check-catches" class="md-nav__link">
+    <span class="md-ellipsis">
+      What the check catches
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-known-inconsistency-list" class="md-nav__link">
+    <span class="md-ellipsis">
+      The known-inconsistency list
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fixing-a-listed-inconsistency" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fixing a listed inconsistency
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#everyday-prs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Everyday PRs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#explaining-a-reported-line" class="md-nav__link">
+    <span class="md-ellipsis">
+      Explaining a reported line
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bumping-the-uberon-release-before-refresh-imports-and-every-release" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bumping the Uberon release (before refresh-imports and every release)
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="uberon-pin-and-full-uberon-qc">Uberon pin and full-Uberon QC</h1>
+<p>DHBAO uses one pinned Uberon release for three things:</p>
+<ul>
+<li><strong>The bridge.</strong> <code>sources/uberon-bridge-to-dhba.owl</code> is downloaded from that release's tag in the Uberon repo and merged into <code>components/all_templates.owl</code>.</li>
+<li><strong>The Uberon import.</strong> <code>mirror-uberon</code> downloads that release's <code>uberon-base.owl</code> and removes its disjointness axioms. This becomes part of <code>imports/merged_import.owl</code>.</li>
+<li><strong>The full-Uberon QC.</strong> <code>make reason_test_uberon</code> reasons over <code>dhbao-edit.owl</code> together with that release's <strong>full</strong> <code>uberon.owl</code>. Unlike the import, the full release keeps the disjointness axioms, and it is what CL's release reasons with. CI runs it on every PR.</li>
+</ul>
+<p>The release is set in one place, <code>src/ontology/dhbao.Makefile</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="nv">UBERON_RELEASE</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">2026</span>-11-05
+</code></pre></div>
+<p>Pinning means a new Uberon release can't change the import or fail a PR. Uberon only changes when someone deliberately bumps <code>UBERON_RELEASE</code>.</p>
+<h2 id="what-the-check-catches">What the check catches</h2>
+<p>The DHBA–Uberon mappings are not kept in this repo. They are <code>xref: DHBA:&lt;id&gt;</code> lines in Uberon's <code>uberon-edit.obo</code>. Uberon turns each one into an axiom in <code>uberon-bridge-to-dhba.owl</code>:</p>
+<div class="highlight"><pre><span></span><code>DHBA_x EquivalentTo (UBERON_y and (in_taxon some Homo sapiens))
+</code></pre></div>
+<p>The bridge is merged into <code>components/all_templates.owl</code> when the component is built. Two kinds of error then show up only when DHBA is reasoned together with Uberon:</p>
+<ul>
+<li><strong>Unsatisfiable classes.</strong> A DHBA structure sits under a parent whose Uberon mapping is a region that Uberon says the structure is <em>not</em> in. For example, DHBA puts the posterior commissure in <em>white matter of midbrain</em>, while Uberon puts it in the diencephalon, and Uberon has <em>part of midbrain</em> disjoint with <em>part of diencephalon</em>.</li>
+<li><strong>Inferred equivalences between named classes.</strong> Two DHBA classes are mapped to the same Uberon class, so they become equivalent to each other. CL's release fails on these (<code>--equivalent-classes-allowed asserted-only</code>). This is what blocked CL's import refresh in November 2026 (obophenotype/uberon#3815).</li>
+</ul>
+<p>The standard <code>make test</code> doesn't catch either: the import has no disjointness axioms, and <code>reason_test</code> allows inferred equivalences.</p>
+<h2 id="the-known-inconsistency-list">The known-inconsistency list</h2>
+<p>DHBA classes that are already inconsistent with full Uberon are listed in <code>src/ontology/qc_known_inconsistent_full_uberon.txt</code>. Each line is either the IRI of an unsatisfiable class, or <code>IRI == IRI</code> for an inferred equivalence. The header of the list names the Uberon release it was generated for.</p>
+<p><code>make reason_test_uberon</code> fails if any of these happen:</p>
+<table>
+<thead>
+<tr>
+<th>Condition</th>
+<th>What to do</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A class or equivalence that isn't in the list is reported</td>
+<td>Fix the mapping that causes it (see "Explaining a reported line" below). Don't add it to the list.</td>
+</tr>
+<tr>
+<td>A listed line no longer applies</td>
+<td>Remove the line from the list in the same PR. A stale line keeps the class exempt, so if it breaks again the check won't notice.</td>
+</tr>
+<tr>
+<td>The list's header names a different release from <code>UBERON_RELEASE</code></td>
+<td>Regenerate the list (see "Bumping the Uberon release" below).</td>
+</tr>
+</tbody>
+</table>
+<p>Rules for the list:</p>
+<ul>
+<li><strong>Never add a line by hand.</strong> Lines are only added when the list is regenerated during an Uberon bump, and each new line has to be explained in that PR.</li>
+<li><strong>Removing lines by hand is fine.</strong> Removing a line is how you record a fix.</li>
+<li>The aim is to shrink the list to nothing. Each fix should remove lines.</li>
+</ul>
+<h2 id="fixing-a-listed-inconsistency">Fixing a listed inconsistency</h2>
+<p>Most fixes are made in Uberon, not here:</p>
+<ol>
+<li>Fix the mapping in Uberon (<code>src/ontology/uberon-edit.obo</code>): remove or move the <code>xref: DHBA:&lt;id&gt;</code>, or fix the Uberon axiom that is wrong. Reference the DHBA issue in the Uberon PR.</li>
+<li>Once that change is in a Uberon release, bump <code>UBERON_RELEASE</code> here and rebuild the component with that release's bridge (see below). The regenerated list no longer has the fixed lines. Link the DHBA issue from that PR so it closes.</li>
+</ol>
+<p>If a fix reaches DHBA without an Uberon bump, for example a change to the structure graph, remove the fixed lines from the list by hand in the same PR. The check fails until you do.</p>
+<h2 id="everyday-prs">Everyday PRs</h2>
+<ul>
+<li><strong>CI checks the committed <code>components/all_templates.owl</code> and <code>imports/merged_import.owl</code> (<code>COMP=false</code>).</strong> It doesn't rebuild the component from the Allen API or download the bridge.</li>
+<li><strong>To run the check locally:</strong></li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>src/ontology
+sh<span class="w"> </span>run.sh<span class="w"> </span>make<span class="w"> </span>reason_test_uberon<span class="w"> </span><span class="nv">IMP</span><span class="o">=</span><span class="nb">false</span><span class="w"> </span><span class="nv">PAT</span><span class="o">=</span><span class="nb">false</span><span class="w"> </span><span class="nv">MIR</span><span class="o">=</span><span class="nb">false</span><span class="w"> </span><span class="nv">COMP</span><span class="o">=</span><span class="nb">false</span>
+</code></pre></div>
+<p>The first run downloads the full Uberon file (about 96 MB) to <code>tmp/uberon-&lt;release&gt;.owl</code>. Later runs reuse it.</p>
+<h2 id="explaining-a-reported-line">Explaining a reported line</h2>
+<p>Unsatisfiable classes:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>src/ontology
+robot<span class="w"> </span>merge<span class="w"> </span>-i<span class="w"> </span>dhbao-edit.owl<span class="w"> </span>-i<span class="w"> </span>tmp/uberon-<span class="k">$(</span>sed<span class="w"> </span>-n<span class="w"> </span><span class="s1">&#39;s/^UBERON_RELEASE *= *//p&#39;</span><span class="w"> </span>dhbao.Makefile<span class="k">)</span>.owl<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>explain<span class="w"> </span>-M<span class="w"> </span>unsatisfiability<span class="w"> </span>--unsatisfiable<span class="w"> </span>all<span class="w"> </span>--explanation<span class="w"> </span>explain.md
+</code></pre></div>
+<p>Inferred equivalences: look for the Uberon term that has both DHBA IDs as xrefs:</p>
+<div class="highlight"><pre><span></span><code>grep<span class="w"> </span>-B30<span class="w"> </span>-E<span class="w"> </span><span class="s1">&#39;xref: DHBA:(12491|12518)$&#39;</span><span class="w"> </span>uberon-edit.obo<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-E<span class="w"> </span><span class="s1">&#39;^(id|name|xref: DHBA)&#39;</span>
+</code></pre></div>
+<h2 id="bumping-the-uberon-release-before-refresh-imports-and-every-release">Bumping the Uberon release (before <code>refresh-imports</code> and every release)</h2>
+<p>Pin first, then refresh. This keeps the import, the bridge in the component, and the QC check on the same Uberon release.</p>
+<ol>
+<li>Choose the release from <a href="https://github.com/obophenotype/uberon/releases">https://github.com/obophenotype/uberon/releases</a>, for example <code>v2026-11-05</code>. Check that it includes both <code>uberon-base.owl</code> and <code>uberon.owl</code> as release files.</li>
+<li>In <code>src/ontology/dhbao.Makefile</code>, set <code>UBERON_RELEASE</code> to that release without the <code>v</code>.</li>
+<li>Rebuild the component, which downloads the bridge from the same Uberon release (<code>https://raw.githubusercontent.com/obophenotype/uberon/v&lt;release&gt;/src/ontology/bridge/uberon-bridge-to-dhba.owl</code>), and refresh the imports. The component is built twice because the import seed depends on the component, and the component's labels depend on the import:</li>
+</ol>
+<div class="highlight"><pre><span></span><code>sh<span class="w"> </span>run.sh<span class="w"> </span>make<span class="w"> </span>components/all_templates.owl
+sh<span class="w"> </span>run.sh<span class="w"> </span>make<span class="w"> </span>refresh-imports<span class="w"> </span><span class="nv">COMP</span><span class="o">=</span><span class="nb">false</span>
+sh<span class="w"> </span>run.sh<span class="w"> </span>make<span class="w"> </span>components/all_templates.owl
+</code></pre></div>
+<ol>
+<li>Regenerate the known list:</li>
+</ol>
+<div class="highlight"><pre><span></span><code>sh<span class="w"> </span>run.sh<span class="w"> </span>make<span class="w"> </span>reason_test_uberon<span class="w"> </span><span class="nv">IMP</span><span class="o">=</span><span class="nb">false</span><span class="w"> </span><span class="nv">PAT</span><span class="o">=</span><span class="nb">false</span><span class="w"> </span><span class="nv">MIR</span><span class="o">=</span><span class="nb">false</span><span class="w"> </span><span class="nv">COMP</span><span class="o">=</span><span class="nb">false</span><span class="w"> </span><span class="nv">UBERON_QC_UPDATE</span><span class="o">=</span><span class="nb">true</span>
+</code></pre></div>
+<p>This rewrites <code>qc_known_inconsistent_full_uberon.txt</code> and prints which lines it removed and which it added.
+5. Review every added line. Each one is a DHBA class or equivalence that the new Uberon release made inconsistent. Explain it, then fix the mapping or open an issue for it, and link the issue in the PR. For each removed line, link the issue it fixes.
+6. Open <strong>one PR</strong> with only the <code>UBERON_RELEASE</code> change, the rebuilt component and imports, and the regenerated list. Don't mix in other changes.
+7. Run <code>make prepare_release</code> only after that PR is merged.</p>
+<p>CI caches the downloaded <code>uberon.owl</code> with a cache key based on <code>UBERON_RELEASE</code>. Bumping the release downloads the new file once.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["content.tabs.link"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.1e8ae164.min.js"></script>
+      
+    
+  </body>
+</html>
