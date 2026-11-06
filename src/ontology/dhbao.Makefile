@@ -19,7 +19,10 @@ JOBS = 16 # 1 17 10 8
 BRIDGES = dhba
 TARGETS = dhba
 
-LINKML = linkml-data2owl
+# linkml-owl and its dependencies are installed into PYDEPS by `dependencies`, apart from
+# the ODK image's own Python packages, which they conflict with.
+PYDEPS = $(TMPDIR)/pydeps
+LINKML = env PYTHONPATH=$(PYDEPS) python3 $(PYDEPS)/bin/linkml-data2owl
 
 STRUCTURE_GRAPHS = $(patsubst %, sources/%.json, $(JOBS))
 ALL_GRAPH_ONTOLOGIES = $(patsubst sources/%.json,sources/%.ofn,$(STRUCTURE_GRAPHS))
@@ -36,7 +39,7 @@ $(COMPONENTSDIR)/all_templates.owl: clean_files dependencies $(COMPONENTSDIR)/li
 # Installing depedencies so it can run in ODK container
 .PHONY: dependencies
 dependencies:
-	pip3 install -r ../../requirements.txt
+	pip3 install -q --ignore-installed --target $(PYDEPS) -r ../../requirements.txt -c ../../constraints.txt
 
 
 LOCAL_CLEAN_FILES = $(ALL_GRAPH_ONTOLOGIES) $(ALL_BRIDGES) $(TMPDIR)/tmp.json $(TMPDIR)/tmp.owl $(COMPONENTSDIR)/sources_merged.owl $(COMPONENTSDIR)/linkouts.owl $(TEMPLATEDIR)/linkouts.tsv
