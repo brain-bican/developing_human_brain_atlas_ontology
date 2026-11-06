@@ -22,6 +22,8 @@ Preparation:
 To actually run the release, you:
 
 1. Open a command line terminal window and navigate to the src/ontology directory (`cd dhbao/src/ontology`)
+    **DHBAO:** the Uberon bridge and import are pinned to `UBERON_RELEASE` in `src/ontology/dhbao.Makefile`, so a release doesn't pick up a newer Uberon on its own. To use a newer Uberon in this release, first bump `UBERON_RELEASE`, rebuild the component and refresh the imports, then regenerate `qc_known_inconsistent_full_uberon.txt`. Merge all of that as its own PR before running the release. See [Uberon pin and full-Uberon QC](../uberon-qc.md#bumping-the-uberon-release-before-refresh-imports-and-every-release).
+
 2. Run release pipeline:`sh run.sh make prepare_release -B`. Note that for some ontologies, this process can take up to 90 minutes - especially if there are large ontologies you depend on, like PRO or CHEBI.
 3. If everything went well, you should see the following output on your machine: `Release files are now in ../.. - now you should commit, push and make a release on your git hosting site such as GitHub or GitLab`.
 

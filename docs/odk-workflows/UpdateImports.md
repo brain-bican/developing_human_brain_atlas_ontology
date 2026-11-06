@@ -77,6 +77,8 @@ _WARNING_. Note that doing this is a _widespread antipattern_ (see related [issu
 
 ### Refresh imports
 
+> **DHBAO: Uberon is pinned.** `mirror-uberon` downloads the Uberon release set by `UBERON_RELEASE` in `src/ontology/dhbao.Makefile`, not the latest one, and the component's bridge comes from the same release. Refreshing imports therefore doesn't upgrade Uberon. To upgrade it, bump `UBERON_RELEASE` *before* rebuilding the component and running `sh run.sh make refresh-imports`. Then regenerate the full-Uberon QC list with `sh run.sh make reason_test_uberon IMP=false PAT=false MIR=false COMP=false UBERON_QC_UPDATE=true` and review what it added and removed. See [Uberon pin and full-Uberon QC](../uberon-qc.md#bumping-the-uberon-release-before-refresh-imports-and-every-release).
+
 If you want to refresh the import yourself (this may be necessary to pass the travis tests), and you have the ODK installed, you can do the following (using go as an example):
 
 First, you navigate in your terminal to the ontology directory (underneath src in your hpo root directory). 
