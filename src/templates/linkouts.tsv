@@ -32,7 +32,7 @@ http://purl.obolibrary.org/obo/NCBITaxon_9526		Catarrhini
 http://purl.obolibrary.org/obo/NCBITaxon_9604		Hominidae
 http://purl.obolibrary.org/obo/NCBITaxon_9605		Homo
 http://purl.obolibrary.org/obo/NCBITaxon_9606		Homo sapiens
-http://purl.obolibrary.org/obo/UBERON_0000000		processual entity
+http://purl.obolibrary.org/obo/UBERON_0000001		gross anatomical part
 http://purl.obolibrary.org/obo/UBERON_0000005		chemosensory organ
 http://purl.obolibrary.org/obo/UBERON_0000006		islet of Langerhans
 http://purl.obolibrary.org/obo/UBERON_0000007		pituitary gland
@@ -723,7 +723,7 @@ http://purl.obolibrary.org/obo/UBERON_0002338		lamina propria of bronchus
 http://purl.obolibrary.org/obo/UBERON_0002342		neural crest
 http://purl.obolibrary.org/obo/UBERON_0002343		abdomen musculature
 http://purl.obolibrary.org/obo/UBERON_0002345		descending thoracic aorta
-http://purl.obolibrary.org/obo/UBERON_0002346		neurectoderm
+http://purl.obolibrary.org/obo/UBERON_0002346		neuroectoderm
 http://purl.obolibrary.org/obo/UBERON_0002347		thoracic vertebra
 http://purl.obolibrary.org/obo/UBERON_0002348		epicardium
 http://purl.obolibrary.org/obo/UBERON_0002349		myocardium
@@ -1009,6 +1009,7 @@ http://purl.obolibrary.org/obo/UBERON_0002884		intercalated amygdaloid nuclei
 http://purl.obolibrary.org/obo/UBERON_0002885		accessory basal amygdaloid nucleus
 http://purl.obolibrary.org/obo/UBERON_0002886		lateral amygdaloid nucleus
 http://purl.obolibrary.org/obo/UBERON_0002890		anterior amygdaloid area
+http://purl.obolibrary.org/obo/UBERON_0002891		cortical amygdaloid nucleus
 http://purl.obolibrary.org/obo/UBERON_0002893		nucleus of lateral olfactory tract
 http://purl.obolibrary.org/obo/UBERON_0002894		olfactory cortex
 http://purl.obolibrary.org/obo/UBERON_0002895		secondary olfactory cortex
@@ -1039,6 +1040,7 @@ http://purl.obolibrary.org/obo/UBERON_0002935		magnocellular part of ventral ant
 http://purl.obolibrary.org/obo/UBERON_0002936		magnocellular part of red nucleus
 http://purl.obolibrary.org/obo/UBERON_0002938		parvocellular part of red nucleus
 http://purl.obolibrary.org/obo/UBERON_0002939		ventral posteroinferior nucleus
+http://purl.obolibrary.org/obo/UBERON_0002940		anterior column of fornix
 http://purl.obolibrary.org/obo/UBERON_0002942		ventral posterolateral nucleus
 http://purl.obolibrary.org/obo/UBERON_0002943		lingual gyrus
 http://purl.obolibrary.org/obo/UBERON_0002945		ventral posteromedial nucleus of thalamus
@@ -2154,7 +2156,6 @@ http://purl.obolibrary.org/obo/UBERON_0007592		ciliated columnar epithelium
 http://purl.obolibrary.org/obo/UBERON_0007601		ciliated epithelium
 http://purl.obolibrary.org/obo/UBERON_0007616		layer of synovial tissue
 http://purl.obolibrary.org/obo/UBERON_0007617		synovial cavity of joint
-http://purl.obolibrary.org/obo/UBERON_0007625		pigment epithelium of eye
 http://purl.obolibrary.org/obo/UBERON_0007626		subparaventricular zone
 http://purl.obolibrary.org/obo/UBERON_0007628		lateral septal complex
 http://purl.obolibrary.org/obo/UBERON_0007629		medial septal complex
@@ -2651,7 +2652,6 @@ http://purl.obolibrary.org/obo/UBERON_0013525		stomach lumen
 http://purl.obolibrary.org/obo/UBERON_0013526		otocyst lumen
 http://purl.obolibrary.org/obo/UBERON_0013529		Brodmann area
 http://purl.obolibrary.org/obo/UBERON_0013531		retrosplenial region
-http://purl.obolibrary.org/obo/UBERON_0013541		Brodmann (1909) area 10
 http://purl.obolibrary.org/obo/UBERON_0013559		Brodmann (1909) area 28
 http://purl.obolibrary.org/obo/UBERON_0013598		accessory nucleus of optic tract
 http://purl.obolibrary.org/obo/UBERON_0013600		lateral accessory nucleus of optic tract
@@ -2989,6 +2989,7 @@ http://purl.obolibrary.org/obo/UBERON_0025261		thalamic fiber tract
 http://purl.obolibrary.org/obo/UBERON_0025525		motor system
 http://purl.obolibrary.org/obo/UBERON_0025533		proprioceptive system
 http://purl.obolibrary.org/obo/UBERON_0025677		paravermis parts of the cerebellar cortex
+http://purl.obolibrary.org/obo/UBERON_0025763		rostral sulcus
 http://purl.obolibrary.org/obo/UBERON_0027285		paravermis lobule area
 http://purl.obolibrary.org/obo/UBERON_0027309		paravermis of the posterior lobe of the cerebellum
 http://purl.obolibrary.org/obo/UBERON_0027310		paravermis of the anterior lobe of the cerebellum
@@ -3271,6 +3272,8 @@ http://purl.obolibrary.org/obo/UBERON_8600123		lower airway ganglion
 http://purl.obolibrary.org/obo/UBERON_8600136		sigmoid colon lamina propria
 http://purl.obolibrary.org/obo/UBERON_8600138		stomach lamina propria
 http://purl.obolibrary.org/obo/UBERON_8600140		rectum lamina propria
+http://purl.obolibrary.org/obo/UBERON_8850001		epithelium of anorectum
+http://purl.obolibrary.org/obo/UBERON_8930191		spleen connective tissue
 https://purl.brain-bican.org/ontology/dhbao/DHBA_10153	http://atlas.brain-map.org/atlas?atlas=138322605#structure=10153	neural plate  ( human dev )
 https://purl.brain-bican.org/ontology/dhbao/DHBA_10153	http://atlas.brain-map.org/atlas?atlas=265297126#structure=10153	neural plate  ( human dev )
 https://purl.brain-bican.org/ontology/dhbao/DHBA_10153	http://atlas.brain-map.org/atlas?atlas=3#structure=10153	neural plate  ( human dev )
