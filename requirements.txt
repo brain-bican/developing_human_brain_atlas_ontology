@@ -1,3 +1,5 @@
 pandas
 ruamel.yaml
-linkml-owl
+# linkml-owl 0.5.x rejects the untyped parent_structure_id in structure_graph_schema.yaml
+# ("Cannot convert ... to class expression"); see #14. Exact pins are in constraints.txt.
+linkml-owl>=0.4.2,<0.5
