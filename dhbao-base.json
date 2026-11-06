@@ -19,9 +19,9 @@
         "val" : "Developing Human Brain Atlas Ontology"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2026-11-05"
+        "val" : "2026-11-06"
       } ],
-      "version" : "https://purl.brain-bican.org/ontology/dhbao/releases/2026-11-05/dhbao-base.json"
+      "version" : "https://purl.brain-bican.org/ontology/dhbao/releases/2026-11-06/dhbao-base.json"
     },
     "nodes" : [ {
       "id" : "http://purl.obolibrary.org/obo/NCBITaxon_1",
